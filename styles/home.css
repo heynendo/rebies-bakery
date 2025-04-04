@@ -1,0 +1,186 @@
+.header{
+    height: 600px;
+    /*background-size: 100% 100%;*/
+    background-position: center center; /*Center the image horizontally and vertically */
+    background-size: cover;/* Scale the image to cover the entire area */
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: 1.5s;
+}
+.img1{
+    background-image: url("../images/header-background-1.png");
+}
+.img2{
+    background-image: url("../images/header-background-2.png");
+}
+.img3{
+    background-image: url("../images/header-background-3.png");
+}
+.header > span{
+    color: white;
+    font-weight: 700;
+    font-size: 1.75em;
+    text-align: center;
+    padding: 10px;
+    margin: 0 6vw;
+    letter-spacing: 0.2em;
+    transition: 2.5s;
+    font-style: italic;
+    text-decoration-line: underline;
+    text-decoration-color: #A91125;
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-color: #A91125;
+    text-underline-offset: 10px;
+    transition: 1s;
+}
+.header > span::before{
+    filter:blur(10px);
+}
+.header > span::after{
+    filter:blur(0px);
+}
+.break{
+    height: 2px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #A91125;
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.25);
+}
+.content{
+    max-width: 1400px;
+    justify-self: center;
+    width: 100%;
+}
+.content .container{
+    display: grid;
+    justify-self: center;
+    position: relative;
+    width: 100%;
+}
+.content .container .card{
+    width: 100%;
+    max-height: 275px;
+    border-radius: 10px;
+    position: relative;
+    align-self: center;
+    z-index: -1;
+    display: grid;
+}
+.content .black{ 
+    grid-template-columns: 1fr 300px; 
+    right: 75px;
+}
+.content .red{ 
+    grid-template-columns: 300px 1fr; 
+    left: 75px;
+}
+.content .black .card{
+    grid-template-columns: 1fr 150px;
+    background-color: #181818;
+    left: 150px;
+    width: 100%;
+}
+.content .red .card{
+    grid-template-columns: 150px 1fr;
+    background-color: #A91125;
+    right: 150px;
+    width: 100%;
+}
+.content .black .card button{
+    background-color: #A91125;
+}
+.content .container img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+.content .container .facebook-logo{
+    width: 250px;
+    height: 250px;
+}
+.content .container .card p{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 15px 2%;
+}
+.content .black .card p{
+    justify-self: left;
+}
+@media (max-width: 900px){
+    .header{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: space-around;
+    }
+    .header > span{
+        margin: 50px;
+        padding: 10px;
+        font-size: 1.4em;
+        line-height: 1.5em;
+    }
+    
+    .content{
+        position: relative;
+        top: -140px;
+    }
+    .content .container{
+        display: grid;
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 400px;
+        justify-content: center;
+        margin: auto;
+        left: 0;
+        right: 0;
+    }
+    .content .container:nth-child(1){
+        top: 130px;
+    }
+    .content .container:nth-child(2){
+        top: 65px;
+    }
+    .content .container .card-img img{
+        height: 250px;
+        width: 250px;
+    }
+    .content .container .card{
+        grid-row: 2;
+        min-height: 250px;
+        padding-top: 125px;
+        display: flex;
+        align-content: space-around;
+        position: relative;
+        left: 0;
+        right: 0;
+        /*top: -180px;*/
+    }
+    .content .container .card div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .content .container .card-img{
+        grid-row: 1;
+        justify-self: center;
+        position: relative;
+        overflow: hidden;
+        top: 125px;
+    }
+    .content .container .card p{
+        font-size: 0.9em;
+        padding: 20px 15px;
+    }
+    .content .container .card button{
+        margin: 0 auto;
+        width: 70%;
+    }
+}
