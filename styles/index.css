@@ -18,7 +18,7 @@ h1{
     margin: 50px 10px;
 }
 body{
-    background-image: url("./images/background-fill.png");
+    background-image: url("../images/background-fill.png");
     background-repeat: repeat;
     background-size: 300px;
     background-color: #f3f3f3;
