@@ -81,9 +81,10 @@
     color: white;
     align-content: center;
     font-weight: 700;
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.2em;
     padding: 0 45px;
+    text-align: center;
 
     grid-column: 2 / -2;
     grid-row: 2;

@@ -62,6 +62,8 @@ form input{
     margin: 3px;
     font-weight: 700;
     font-size: 18px;
+    appearance: none;
+    -webkit-appearance: none;
 }
 form input:focus{
     border: none;
