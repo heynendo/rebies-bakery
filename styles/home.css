@@ -49,70 +49,145 @@
     padding: 0;
     background-color: #A91125;
     box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.25);
+    margin-bottom: 50px;
+}
+p{
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.2em;
+    color: #FFFFFF;
+    padding: 25px;
+    align-self: center;
 }
 .content{
-    max-width: 1400px;
+    max-width: 1200px;
     justify-self: center;
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
 .content .container{
     display: grid;
-    justify-self: center;
-    position: relative;
     width: 100%;
+    justify-content: center;
+    margin: 25px auto;
 }
-.content .container .card{
-    width: 100%;
-    max-height: 275px;
-    border-radius: 10px;
-    position: relative;
-    align-self: center;
-    z-index: -1;
-    display: grid;
+/* about card */
+.about{
+    width: 90%;
+    grid-template-columns: 1fr 150px 150px;
+    grid-template-rows: 25px 150px 100px 25px 10px;
 }
-.content .black{ 
-    grid-template-columns: 1fr 300px; 
-    right: 75px;
-}
-.content .red{ 
-    grid-template-columns: 300px 1fr; 
-    left: 75px;
-}
-.content .black .card{
-    grid-template-columns: 1fr 150px;
+.about .about-card{
     background-color: #181818;
-    left: 150px;
-    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+    grid-column: 1 / 3;
+    grid-row: 2 / 4 ;
 }
-.content .red .card{
-    grid-template-columns: 150px 1fr;
+.about .about-button{
+    grid-column: 1 / 2 ;
+    grid-row: 3 / 4 ;
+}
+.about .about-button button{
     background-color: #A91125;
-    right: 150px;
+}
+.about .about-button button:hover{
+    background-color: white;
+    color: #A91125;
+}
+.about .about-p{
+    grid-column: 1 / 2 ;
+    grid-row: 2 / 3 ;
+}
+.about .about-img{
     width: 100%;
-}
-.content .black .card button{
-    background-color: #A91125;
-}
-.content .container img{
+    height: 100%;
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+
+    grid-column: 2 / -1 ;
+    grid-row: 1 / -2 ;
 }
-.content .container .facebook-logo{
-    width: 250px;
-    height: 250px;
+/* cake card */
+.cake{
+    width: 90%;
+    grid-template-columns: 150px 150px 1fr;
+    grid-template-rows: 25px 150px 100px 25px 10px;
 }
-.content .container .card p{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1em;
-    line-height: 24px;
-    color: #FFFFFF;
-    padding: 15px 2%;
+.cake .cake-card{
+    background-color: #A91125;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+    grid-column: 2 / -1 ;
+    grid-row: 2 / 4 ;
 }
-.content .black .card p{
-    justify-self: left;
+.cake .cake-p{
+    grid-column: 3 / -2 ;
+    grid-row: 2 / 3 ;
 }
+.cake .cake-button{
+    grid-column: 3 / 4 ;
+    grid-row: 3 / 4 ;
+}
+.cake .cake-button button{
+    background-color: white;
+    color: #181818;
+}
+
+.cake .cake-button button:hover{
+    background-color: #181818;
+    color: white;
+}
+.cake .cake-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+
+    grid-column: 1 / 3 ;
+    grid-row: 1 / -2 ;
+}
+/* facebook card */
+.facebook{
+    width: 90%;
+    grid-template-columns: 1fr 125px 125px;
+    grid-template-rows: 25px 100px 100px 25px 10px;
+}
+.facebook .facebook-card{
+    background-color: #181818;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+    grid-column: 1 / 3;
+    grid-row: 2 / 4 ;
+}
+.facebook .facebook-p{
+    grid-column: 1 / 2 ;
+    grid-row: 2 / 3 ;
+}
+.facebook .facebook-button{
+    grid-column: 1 / 2 ;
+    grid-row: 3 / 4 ;
+}
+.facebook .facebook-button button{
+    background-color: #A91125;
+}
+.facebook .facebook-button button:hover{
+    background-color: white;
+    color: #A91125;
+}
+.facebook .facebook-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+
+    grid-column: 2 / -1 ;
+    grid-row: 1 / -2 ;
+}
+
 @media (max-width: 900px){
     .header{
         height: 400px;
@@ -126,61 +201,91 @@
         font-size: 1.4em;
         line-height: 1.5em;
     }
-    
-    .content{
-        position: relative;
-        top: -140px;
+}
+@media (max-width: 800px){
+    /* about card */
+    .about{
+        width: 95%;
+        grid-template-columns: 20% minmax(180px, 225px) 20%;
+        grid-template-rows: 112.5px 112.5px 175px 100px;
     }
-    .content .container{
-        display: grid;
-        width: 90%;
-        grid-template-columns: 1fr;
-        grid-template-rows: 250px 400px;
-        justify-content: center;
-        margin: auto;
-        left: 0;
-        right: 0;
+    .about .about-card{
+        grid-column: 1 / -1;
+        grid-row: 2 / -1 ;
     }
-    .content .container:nth-child(1){
-        top: 130px;
+    .about .about-button{
+        grid-column: 1 / -1;
+        grid-row: 4 / 5 ;
     }
-    .content .container:nth-child(2){
-        top: 65px;
+    .about .about-button button{
+        width: 65%;
+        background-color: #A91125;
     }
-    .content .container .card-img img{
-        height: 250px;
-        width: 250px;
+    .about .about-p{
+        text-align: center;
+
+        grid-column: 1 / -1;
+        grid-row: 3 / 4 ;
     }
-    .content .container .card{
-        grid-row: 2;
-        min-height: 250px;
-        padding-top: 125px;
-        display: flex;
-        align-content: space-around;
-        position: relative;
-        left: 0;
-        right: 0;
-        /*top: -180px;*/
+    .about .about-img{
+        grid-column: 2;
+        grid-row: 1 / 3 ;
     }
-    .content .container .card div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 20px;
+    /* cake card */
+    .cake{
+        width: 95%;
+        grid-template-columns: 20% minmax(180px, 225px) 20%;
+        grid-template-rows: 112.5px 112.5px 175px 100px;
     }
-    .content .container .card-img{
-        grid-row: 1;
-        justify-self: center;
-        position: relative;
-        overflow: hidden;
-        top: 125px;
+    .cake .cake-card{
+        background-color: #A91125;
+
+        grid-column: 1 / -1;
+        grid-row: 2 / -1 ;
     }
-    .content .container .card p{
-        font-size: 0.9em;
-        padding: 20px 15px;
+    .cake .cake-p{
+        text-align: center;
+
+        grid-column: 1 / -1;
+        grid-row: 3 / 4 ;
     }
-    .content .container .card button{
-        margin: 0 auto;
-        width: 70%;
+    .cake .cake-button{
+        grid-column: 1 / -1;
+        grid-row: 4 / 5 ;
+    }
+    .cake .cake-button button{
+        width: 65%;
+    }
+    .cake .cake-img{
+        grid-column: 2;
+        grid-row: 1 / 3 ;
+    }
+    /* facebook card */
+    .facebook{
+        width: 95%;
+        grid-template-columns: 20% minmax(180px, 225px) 20%;
+        grid-template-rows: 112.5px 112.5px 100PX 100px;
+    }
+    .facebook .facebook-card{
+        grid-column: 1 / -1;
+        grid-row: 2 / -1 ;
+    }
+    .facebook .facebook-p{
+        text-align: center;
+
+        grid-column: 1 / -1;
+        grid-row: 3 / 4 ;
+    }
+    .facebook .facebook-button{
+        grid-column: 1 / -1;
+        grid-row: 4 / 5 ;
+    }
+    .facebook .facebook-button button{
+        width: 65%;
+        background-color: #A91125;
+    }
+    .facebook .facebook-img{
+        grid-column: 2;
+        grid-row: 1 / 3 ;
     }
 }

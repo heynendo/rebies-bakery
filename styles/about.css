@@ -1,0 +1,166 @@
+
+.content{
+    width: 90%;
+    justify-self: center;
+    max-width: 1200px;
+    margin: auto;
+}
+.content .container{
+    display: grid;
+    justify-content: center;
+    margin: 25px auto;
+}
+/* about section */
+.content .about{
+    width: 100%;
+    grid-template-columns: 5% 150px 150px 1fr 5%;
+    grid-template-rows: 25px 250px 25px 10px;
+
+}
+.content .about .about-card{
+    background-color: #181818;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+    grid-column: 3 / -2 ;
+    grid-row: 2 / 3 ;
+}
+.about-p{
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.2em;
+    color: #FFFFFF;
+    padding: 25px;
+    align-self: center;
+
+    grid-column: 4 / -2 ;
+    grid-row: 2 ;
+}
+.about-headshot{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+
+    grid-column: 2 / 4 ;
+    grid-row: 1 / 4 ;
+}
+/* cakes section */
+.content .cakes {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 5% 5% 1fr 5% 5%;
+    grid-template-rows: 100px 150px auto 50px;
+}
+
+.content .cakes .cakes-card {
+    background-color: #A91125;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+    margin-bottom: 5px;
+
+    grid-column: 2 / -2;
+    grid-row: 1 / -1;
+}
+
+.content .cakes .cakes-h3{
+    color: white;
+    justify-self: center;
+    align-content: center;
+    letter-spacing: 10px;
+    font-size: 3em;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 0 3px 3px #00000050;
+
+    grid-column: 2 / -2;
+    grid-row: 1;
+    z-index: 1;
+}
+.content .cakes .cakes-p{
+    color: white;
+    align-content: center;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.2em;
+    padding: 0 45px;
+
+    grid-column: 2 / -2;
+    grid-row: 2;
+    z-index: 1;
+}
+.content .cakes #cake-gallery {
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    z-index: 1;
+}
+.content .cakes #cake-gallery #cake-images img{
+    width: 99%;
+    height: 99%;
+    justify-self: center;
+    align-self: center;
+    border: #181818 solid 2px;
+
+    background-size: cover;
+    background-position: center;
+
+    z-index: 1;
+    transition: 0.1s;
+    cursor: pointer;
+    filter: brightness(90%);
+}
+.content .cakes #cake-gallery #cake-images img:hover{
+    width: 100%;
+    height: 105%;
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 1.0;
+    filter: brightness(100%);
+}
+
+@media (max-width: 800px){
+    /* about section */
+    .content .about{
+        width: 95%;
+        grid-template-columns: 1fr minmax(180px, 225px) 1fr;
+        grid-template-rows: 112.5px 112.5px 260px;
+    }
+    .content .about .about-card{
+        grid-column: 1 / -1;
+        grid-row: 2 / -1 ;
+    }
+    .content .about .about-p{
+        font-size: 1em;
+        line-height: 1.1em;
+        text-align: center;
+
+        grid-column: 1 / -1;
+        grid-row: 3 / 4 ;
+    }
+    .content .about .about-headshot{
+        grid-column: 2;
+        grid-row: 1 / 3 ;
+    }
+    .content .cakes {
+        width: 95%;
+        grid-template-columns: 0% 10% 1fr 10% 0%;
+        grid-template-rows: 65px 250px auto 50px;
+    }
+    .content .cakes .cakes-h3{
+        letter-spacing: 5px;
+        font-size: 1.75em;
+    }
+    .content .cakes .cakes-p{
+        text-align: center;
+        font-size: 1em;
+        line-height: 1.1em;
+        padding: 0 25px;
+    }
+    .content .cakes #cake-gallery #cake-images img{
+        filter: brightness(100%);
+    }
+}

@@ -1,3 +1,8 @@
+body{
+    background-image: url("../images/background-dots.png");
+    background-size: 300px;
+    background-repeat: repeat;
+}
 .menu-sections{
     /*display: grid;
     grid-template-columns: repeat(3, 400px);*/

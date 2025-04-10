@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
         <meta name="description" content="ReBie's Bakery">
+        <link rel="icon" href="../images/rebies-logo.jpg">
         <title>ReBie's Bakery</title>
-        <link rel="icon" href="./images/rebies-logo.jpg">
         <link rel="stylesheet" href="../styles/index.css">
-        <link rel="stylesheet" href="../styles/menu.css">
         <link rel="stylesheet" href="../styles/nav.css">
+        <link rel="stylesheet" href="../styles/about.css">
     </head>
     <body id="body">
         <nav id="nav">
@@ -37,11 +37,25 @@
         </ul>
         <main>
             <h1>About Me</h1>
+            <div class="content">
+                <div class="container about">
+                    <div class="about-card"></div>
+                    <p class="about-p" id="custom-cakes">Running a small baked goods business has allowed me to turn my love for baking into something people truly enjoy. Every day is a mix of creativity and hard work as I craft delicious treats that bring a smile to my customers. Though the hours can be long, the satisfaction of seeing others appreciate my work makes it all worthwhile.</p>
+                    <img class="about-headshot" src="../images/marie-headshot.png" />
+                </div>
+                <div class="container cakes"> 
+                    <div class="cakes-card"></div>
+                    <h3 class="cakes-h3">custom cakes</h3>
+                    <p class="cakes-p">I make custom cakes that are both beautiful and delicious, tailored to each customer's vision. From elegant wedding designs to fun birthday themes, I love bringing ideas to life with every layer and detail. I use high-quality ingredients and take pride in creating something special for every celebration. Every cake is a blend of creativity, flavor, and a whole lot of love.</p>
+                    <div id="cake-gallery">
+                        <div id="cake-images"></div>
+                    </div>
+                </div>
         </main>
         <footer>
             <div>
-                <div>link & info to certificate</div>
-                <div>image here</div>
+                <div class="certificate"><a href="../images/food-handler-cert.png" target="_blank" title="Click to view certificate">Food Handling Trained & Certified</a></div>
+                <img src="../images/rebies-logo.jpg">
             </div>
             <span>website created by&nbsp;<a>Donovan Heynen</a></span>
         </footer>
@@ -84,4 +98,86 @@
         }
 
     </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageContainer = document.getElementById('cake-images');
+          const totalImages = 20;
+          const startingRow = 1;
+          const possibleExtensions = ['jpeg', 'png', 'jpg', 'webp', 'gif'];
+          const fallbackImage = '../images/cake-img1.jpeg';
+        
+          function getImagesPerRow(width) {
+            if (width > 1000) return 4;
+            if (width > 600) return 3;
+            return 2;
+          }
+        
+          function getImageHeight(width) {
+            if (width > 1200) return 275;
+            if (width > 800) return 250;
+            if (width > 600) return 200;
+            else return 175;
+          }
+        
+          // Image loader that avoids 404s in console
+          function findValidImage(index) {
+            return new Promise((resolve) => {
+              let i = 0;
+              const tryNext = () => {
+                if (i >= possibleExtensions.length) return resolve(fallbackImage);
+                const ext = possibleExtensions[i++];
+                const path = `../images/cake-img${index}.${ext}`;
+                const testImg = new Image();
+                testImg.onload = () => resolve(path);
+                testImg.onerror = tryNext;
+                testImg.src = path;
+              };
+              tryNext();
+            });
+          }
+        
+          let currentImagesPerRow = null;
+        
+          async function loadImages() {
+            const width = window.innerWidth;
+            const imagesPerRow = getImagesPerRow(width);
+            const imageHeight = getImageHeight(width);
+        
+            if (imagesPerRow === currentImagesPerRow) return;
+            currentImagesPerRow = imagesPerRow;
+        
+            imageContainer.innerHTML = '';
+            imageContainer.style.display = 'grid';
+            imageContainer.style.gridTemplateColumns = `repeat(${imagesPerRow}, 1fr)`;
+        
+            for (let i = 1; i <= totalImages; i++) {
+              const src = await findValidImage(i);
+              const img = document.createElement('img');
+              img.src = src;
+              img.title = "Click to view in a new page";
+              img.onclick = () => window.open(img.src, '_blank');
+        
+              const row = startingRow + Math.floor((i - 1) / imagesPerRow);
+              const col = ((i - 1) % imagesPerRow) + 1;
+        
+              img.style.gridRow = row;
+              img.style.gridColumn = col;
+              img.style.height = `${imageHeight}px`;
+        
+              imageContainer.appendChild(img);
+            }
+          }
+        
+          loadImages();
+        
+          let resizeTimeout;
+          window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(loadImages, 200);
+          });
+        });
+    </script>
+        
+        
+    
 </html>

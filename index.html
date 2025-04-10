@@ -4,11 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
         <meta name="description" content="ReBie's Bakery">
-        <title>ReBie's Bakery</title>
         <link rel="icon" href="./images/rebies-logo.jpg">
+        <title>ReBie's Bakery</title>
         <link rel="stylesheet" href="./styles/index.css">
         <link rel="stylesheet" href="./styles/nav.css">
         <link rel="stylesheet" href="./styles/home.css">
+        <link rel="preload" as="image" href="../images/header-background-1.png">
+        <link rel="preload" as="image" href="../images/header-background-2.png">
+        <link rel="preload" as="image" href="../images/header-background-3.png">
     </head>
     <body id="body">
         <nav id="nav">
@@ -18,7 +21,7 @@
                     <li><a href="./pages/menu.html">Menu</a></li>
                     <a href="./index.html"><img src="../images/rebies-logo.jpg"></a>
                     <li><a href="./pages/contact.html">Contact</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=61573868559765" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61573868559765" target="_blank" >Facebook</a></li>
                 </ul>
             </div>
             <div class="nav-sm">
@@ -41,49 +44,31 @@
                 <span class="bottom">we can bake it!</span>
             </div>
             <div class="break"></div>
-            <button>schedule now</button>
+            <a href="./pages/contact.html"><button>schedule now</button></a>
             <div class="content">
-                <div class="container black">
-                    <div class="card">
-                        <div>
-                            <p>Add a paragraph here with some introductory info about you and your business. Add a couple sentences that answer common who/what/when/where/why questions that someone new to your business typically would ask</p>
-                            <button>learn more</button>
-                        </div>
-                        <div></div>
-                    </div>
-                    <div class="card-img">
-                        <img src="./images/marie-headshot.png"/>
-                    </div>
+                <div class="container about">
+                    <div class="about-card"></div>
+                    <p class="about-p">Add a paragraph here with some introductory info about you and your business. Add a couple sentences that answer common who/what/when/where/why questions that someone new to your business typically would ask</p>
+                    <a class="about-button" href="./pages/about.html"><button>learn more</button></a>
+                    <img class="about-img" src="./images/marie-headshot.png"/>
                 </div>
-                <div class="container red">
-                    <div class="card-img">
-                        <img src="./images/home-cake.jpeg"/>
-                    </div>
-                    <div class="card">
-                        <div></div>
-                        <div>
-                            <p>Every cake is made to tell your story. From elegant tiered wedding cakes with custom designs to fun, themed birthday cakes featuring creative decorations, each cake is as unique as your celebration. Click below to see more options</p>
-                            <button >options & pricing</button>
-                        </div>
-                    </div>
+                <div class="container cake">
+                    <div class="cake-card"></div>
+                    <p class="cake-p">Every cake is made to tell your story. From elegant tiered wedding cakes with custom designs to fun, themed birthday cakes featuring creative decorations, each cake is as unique as your celebration. Click below to see more options</p>
+                    <a class="cake-button" href="./pages/about.html#custom-cakes"><button>see others</button></a>
+                    <img class="cake-img" src="./images/home-cake.jpeg"/>
                 </div>
-                <div class="container black">
-                    <div class="card">
-                        <div>
-                            <p>Follow ReBie's Bakery on Facebook! Stay up to date on specials and learn more about the business</p>
-                            <button>go to page</button>
-                        </div>
-                        <div></div>
-                    </div>
-                    <div class="card-img">
-                        <img class="facebook-logo" src="./images/facebook-logo.png"/>
-                    </div>
+                <div class="container facebook">
+                    <div class="facebook-card"></div>
+                    <p class="facebook-p">Follow ReBie's Bakery on Facebook! Stay up to date on specials and learn more about the business</p>
+                    <a class="facebook-button" href="https://www.facebook.com/profile.php?id=61573868559765" target="_blank"><button>go to page</button></a>
+                    <img class="facebook-img" src="./images/facebook-logo.png"/>
                 </div>
         </main>
         <footer>
             <div>
-                <div>link & info to certificate</div>
-                <div>image here</div>
+                <div class="certificate"><a href="./images/food-handler-cert.png" target="_blank" title="Click to view certificate">Food Handling Trained & Certified</a></div>
+                <img src="../images/rebies-logo.jpg">
             </div>
             <span>website created by&nbsp;<a>Donovan Heynen</a></span>
         </footer>
@@ -139,5 +124,6 @@
                 headerElement.classList.add("img1");
             }
         }, 3000);
+
     </script>
 </html>
