@@ -93,7 +93,12 @@ footer .certificate{
 }
 footer .certificate a{
     color: #181818;
-    text-decoration: underline #A91125 2px;
+    text-decoration-line: underline;
+    text-decoration-color: #A91125;
+    text-decoration-thickness: 2px;
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-color: #A91125;
+    -webkit-text-decoration-thickness: 2px;
     text-underline-offset: 5px;
     line-height: 1.75em;
     transition: 0.1s;
@@ -131,5 +136,11 @@ main button{
 @media (max-width: 600px){
     footer img{
         margin: 0;
+    }
+    footer .certificate{
+        width: 200px;
+    }
+    footer img{
+        width: 100px;
     }
 }
