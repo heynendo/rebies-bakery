@@ -71,9 +71,6 @@ footer span a{
     color: #A91125;
     cursor: pointer;
 }
-body .nav-sm{
-    display: none;
-}
 footer > div{
     display: flex;
     justify-content: space-between;

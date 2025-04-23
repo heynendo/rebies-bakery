@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="../styles/nav.css">
         <link rel="stylesheet" href="../styles/contact.css">
     </head>
+    <script src="./jsFunctions/emailSender.js"></script>
     <body id="body">
         <nav id="nav">
             <div class="nav-lg">
@@ -44,24 +45,51 @@
                 </div>
                 <div class="B"></div>
                 <div class="A">
-                    <form>
+                    <form action="https://formsubmit.co/heynen.donovan@gmail.com" method="POST">
                         <div class="container">
                             <label>Name:</label>
-                            <input type="text" required />
+                            <input 
+                                type="text" 
+                                name="name" 
+                                placeholder=""
+                                autocomplete="offf"
+                                required 
+                            />
+                            <p>name is required</p>
                         </div>
                         <div class="container">
                             <label>Email:</label>
-                            <input type="email" required />
+                            <input 
+                                type="email" 
+                                name="email" 
+                                placeholder=""  
+                                required 
+                            />
+                            <p>input a valid email</p>
                         </div>
                         <div class="container">
                             <label>Subject:</label>
-                            <input />
+                            <input 
+                                name="subject" 
+                                placeholder=""  
+                                autocomplete="off"
+                                required
+                            />
+                            <p>subject is required</p>
                         </div>
                         <div class="container">
                             <label>Message:</label>
-                            <textarea minlength="20" autocomplete="off" required></textarea>
+                            <textarea 
+                                minlength="15" 
+                                autocomplete="off" 
+                                name="message" 
+                                placeholder=""  
+                                autocomplete="off"
+                                required
+                            ></textarea>
+                            <p>message must be at least 15 characters</p>
                         </div>
-                        <button type="submit red">send</button>
+                        <button type="submit">send</button>
                     </form>
                 </div>
             </div>
@@ -71,7 +99,7 @@
                 <div class="certificate"><a href="../images/food-handler-cert.png" target="_blank" title="Click to view certificate">Food Handling Trained & Certified</a></div>
                 <img src="../images/rebies-logo.jpg">
             </div>
-            <span>website created by&nbsp;<a>Donovan Heynen</a></span>
+            <span>website created by&nbsp;<a title="link coming soon!">Donovan Heynen</a></span>
         </footer>
     </body>
 

@@ -122,6 +122,160 @@
     opacity: 1.0;
     filter: brightness(100%);
 }
+/* cupcakes section */
+.content .cupcakes {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 5% 5% 1fr 5% 5%;
+    grid-template-rows: 100px 150px auto 50px;
+}
+
+.content .cupcakes .cupcakes-card {
+    background-color: #181818;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+    margin-bottom: 5px;
+
+    grid-column: 2 / -2;
+    grid-row: 1 / -1;
+}
+.content .cupcakes .cupcakes-h3{
+    color: white;
+    justify-self: center;
+    align-content: center;
+    letter-spacing: 10px;
+    font-size: 3em;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 0 3px 3px #00000050;
+
+    grid-column: 2 / -2;
+    grid-row: 1;
+    z-index: 1;
+}
+.content .cupcakes .cupcakes-p{
+    color: white;
+    align-content: center;
+    font-weight: 700;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    padding: 0 45px;
+    text-align: center;
+
+    grid-column: 2 / -2;
+    grid-row: 2;
+    z-index: 1;
+}
+.content .cupcakes #cupcake-gallery {
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    z-index: 1;
+}
+.content .cupcakes #cupcake-gallery #cupcake-images img{
+    width: 99%;
+    height: 99%;
+    justify-self: center;
+    align-self: center;
+    border: #181818 solid 2px;
+
+    background-size: cover;
+    background-position: center;
+
+    z-index: 1;
+    transition: 0.1s;
+    cursor: pointer;
+    filter: brightness(90%);
+}
+.content .cupcakes #cupcake-gallery #cupcake-images img:hover{
+    width: 100%;
+    height: 105%;
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 1.0;
+    filter: brightness(100%);
+}
+
+/*diaper cakes section */
+.content .diapercakes {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 5% 5% 1fr 5% 5%;
+    grid-template-rows: 100px 150px auto 50px;
+}
+
+.content .diapercakes .diapercakes-card {
+    background-color: #A91125;
+    border-radius: 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    z-index: 0;
+    margin-bottom: 5px;
+
+    grid-column: 2 / -2;
+    grid-row: 1 / -1;
+}
+
+.content .diapercakes .diapercakes-h3{
+    color: white;
+    justify-self: center;
+    align-content: center;
+    letter-spacing: 10px;
+    font-size: 3em;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 0 3px 3px #00000050;
+
+    grid-column: 2 / -2;
+    grid-row: 1;
+    z-index: 1;
+}
+.content .diapercakes .diapercakes-p{
+    color: white;
+    align-content: center;
+    font-weight: 700;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    padding: 0 45px;
+    text-align: center;
+
+    grid-column: 2 / -2;
+    grid-row: 2;
+    z-index: 1;
+}
+.content .diapercakes #diapercake-gallery {
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 3;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+    z-index: 1;
+}
+.content .diapercakes #diapercake-gallery #diapercake-images img{
+    width: 99%;
+    height: 99%;
+    justify-self: center;
+    align-self: center;
+    border: #181818 solid 2px;
+
+    background-size: cover;
+    background-position: center;
+
+    z-index: 1;
+    transition: 0.1s;
+    cursor: pointer;
+    filter: brightness(90%);
+}
+.content .diapercakes #diapercake-gallery #diapercake-images img:hover{
+    width: 100%;
+    height: 105%;
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 1.0;
+    filter: brightness(100%);
+}
 
 @media (max-width: 800px){
     /* about section */
@@ -146,6 +300,7 @@
         grid-column: 2;
         grid-row: 1 / 3 ;
     }
+    /* cakes section */
     .content .cakes {
         width: 95%;
         grid-template-columns: 0% 10% 1fr 10% 0%;
@@ -164,4 +319,43 @@
     .content .cakes #cake-gallery #cake-images img{
         filter: brightness(100%);
     }
+    /* cupcakes section */
+    .content .cupcakes {
+        width: 95%;
+        grid-template-columns: 0% 10% 1fr 10% 0%;
+        grid-template-rows: 65px 250px auto 50px;
+    }
+    .content .cupcakes .cupcakes-h3{
+        letter-spacing: 5px;
+        font-size: 1.75em;
+    }
+    .content .cupcakes .cupcakes-p{
+        text-align: center;
+        font-size: 1em;
+        line-height: 1.1em;
+        padding: 0 25px;
+    }
+    .content .cupcakes #cupcake-gallery #cupcake-images img{
+        filter: brightness(100%);
+    }
+    /* diapercakes section */
+    .content .diapercakes {
+        width: 95%;
+        grid-template-columns: 0% 10% 1fr 10% 0%;
+        grid-template-rows: 65px 250px auto 50px;
+    }
+    .content .diapercakes .diapercakes-h3{
+        letter-spacing: 5px;
+        font-size: 1.75em;
+    }
+    .content .diapercakes .diapercakes-p{
+        text-align: center;
+        font-size: 1em;
+        line-height: 1.1em;
+        padding: 0 25px;
+    }
+    .content .diapercakes #diapercake-gallery #diapercake-images img{
+        filter: brightness(100%);
+    }
+    
 }

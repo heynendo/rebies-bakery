@@ -19,6 +19,9 @@
 .img3{
     background-image: url("../images/header-background-3.png");
 }
+.img4{
+    background-image: url("../images/header-background-4.png");
+}
 .header > span{
     color: white;
     font-weight: 700;

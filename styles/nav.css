@@ -66,6 +66,9 @@ nav{
 body .display-hide{
     display: none;
 }
+body .nav-sm{
+    display: none;
+}
 @media (min-width: 801px){
     body .display-show{
         display: none;
@@ -87,7 +90,7 @@ body .display-hide{
     }
     body .nav-sm img{
         height: 100px;
-        margin: 25px;
+        margin: 20px;
     }
     body .nav-sm .top{
         display: flex;
@@ -95,8 +98,8 @@ body .display-hide{
         justify-content: space-between;
         height: 80px;
         margin: auto 2px;
-        margin-top: 45px;
-        width: 160px;
+        margin-top: 40px;
+        width: 160px; 
     }
     body .nav-sm .top a{
         text-transform: uppercase;
