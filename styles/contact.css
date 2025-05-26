@@ -3,7 +3,7 @@ main{
     justify-self: center;
     justify-items: center;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
 }
 .grid{
     display: grid;
@@ -39,7 +39,7 @@ form{
 form .container{
     display: grid;
     grid-template-columns: 25% 70%;
-    grid-template-rows: 1fr 25px;
+    grid-template-rows: 1fr;
     width: 100%;
     justify-items: center;
     margin: 50px 0;
@@ -69,30 +69,6 @@ form input{
 }
 form .container p{
     display: none;
-}
-form input:invalid:not(:placeholder-shown){
-    border: #A91125 2px solid;
-}
-form textarea:invalid:not(:placeholder-shown){
-    border: #A91125 2px solid;
-}
-form input:invalid:not(:placeholder-shown) + p, form textarea:invalid:not(:placeholder-shown) + p {
-    display: block;
-    color: rgb(255, 255, 255);
-    font-weight: 700;
-    grid-column: 2 / 3;
-    justify-self: start;
-    padding-left: 40px;
-    text-decoration-thickness: 2px;
-    text-decoration-line: underline;
-    text-decoration-color: #A91125;
-    -webkit-text-decoration-line: underline;
-    -webkit-text-decoration-color: #A91125;
-    text-underline-offset: 2px;
-}
-form input:invalid ~ button[type="submit"]{
-    opacity: 0.75;
-    pointer-events: none;
 }
 form textarea{
     width: 90%;
@@ -161,7 +137,7 @@ form button:focus{
         grid-template-columns: 30% 65%;
     }
     .grid .C span{
-        font-size: 1.2em;
+        font-size: 1.1em;
         line-height: 1.5em;
     }
     form input{
@@ -174,3 +150,27 @@ form button:focus{
         font-size: 1em;
     }
 }
+/*form input:invalid:not(:placeholder-shown){
+    border: #A91125 2px solid;
+}
+form textarea:invalid:not(:placeholder-shown){
+    border: #A91125 2px solid;
+}
+form input:invalid:not(:placeholder-shown) + p, form textarea:invalid:not(:placeholder-shown) + p {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    grid-column: 2 / 3;
+    justify-self: start;
+    padding-left: 40px;
+    text-decoration-thickness: 2px;
+    text-decoration-line: underline;
+    text-decoration-color: #A91125;
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-color: #A91125;
+    text-underline-offset: 2px;
+}
+form input:invalid ~ button[type="submit"]{
+    opacity: 0.75;
+    pointer-events: none;
+}*/

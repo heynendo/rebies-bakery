@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const imageContainer = document.getElementById('cake-images');
-    const totalImages = 20;
+    const totalImages = 16;
     const startingRow = 1;
     const possibleExtensions = ['jpeg', 'jpg', 'png', 'webp', 'gif'];
     const fallbackImage = '../images/cakes/cake-img1.jpeg';
