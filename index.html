@@ -126,8 +126,14 @@
             }else if(headerElement.classList.contains("img3")){
                 headerElement.classList.remove("img3");
                 headerElement.classList.add("img4");
-            } else{
+            }else if(headerElement.classList.contains("img4")){
                 headerElement.classList.remove("img4");
+                headerElement.classList.add("img5");
+            }else if(headerElement.classList.contains("img5")){
+                headerElement.classList.remove("img5");
+                headerElement.classList.add("img6");
+            }else{
+                headerElement.classList.remove("img6");
                 headerElement.classList.add("img1");
             }
         }, 3000);

@@ -22,6 +22,21 @@
 .img4{
     background-image: url("../images/header-background-4.png");
 }
+.img5{
+    background-image: url("../images/header-background-5.png");
+}
+.img6{
+    background-image: url("../images/header-background-6.png");
+}
+.img7{
+    background-image: url("../images/header-background-7.png");
+}
+.img8{
+    background-image: url("../images/header-background-8.png");
+}
+.img9{
+    background-image: url("../images/header-background-9.png");
+}
 .header > span{
     color: white;
     font-weight: 700;

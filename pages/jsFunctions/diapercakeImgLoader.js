@@ -6,15 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const fallbackImage = '../images/diapercakes/diapercake-img1.png';
   
     function getImagesPerRow(width) {
-      if (width > 1000) return 4;
-      if (width > 600) return 3;
+      if (width > 1000) return 3;
+      if (width > 600) return 2;
       return 2;
     }
   
     function getImageHeight(width) {
-      if (width > 1200) return 275;
-      if (width > 800) return 250;
-      if (width > 600) return 200;
+      if (width > 1200) return 400;
+      if (width > 800) return 325;
+      if (width > 600) return 250;
       else return 175;
     }
   
