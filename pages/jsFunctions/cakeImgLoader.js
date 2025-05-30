@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const totalImages = 20;
     const startingRow = 1;
     const possibleExtensions = ['jpeg', 'jpg', 'png', 'webp', 'gif'];
-    const fallbackImage = '../images/cakes/cake-img1.jpeg';
+    const fallbackImage = '../images/cakes/customcake-img1.jpeg';
   
     function getImagesPerRow(width) {
       if (width > 1000) return 4;
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const tryNext = () => {
           if (i >= possibleExtensions.length) return resolve(fallbackImage);
           const ext = possibleExtensions[i++];
-          const path = `../images/cakes/cake-img${index}.${ext}`;
+          const path = `../images/cakes/customcake-img${index}.${ext}`;
           const testImg = new Image();
           testImg.onload = () => resolve(path);
           testImg.onerror = tryNext;
