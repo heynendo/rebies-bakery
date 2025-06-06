@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const src = await findValidImage(i);
         const img = document.createElement('img');
         img.src = src;
+        img.loading = 'lazy';
         img.title = "Click to view in a new page";
         img.onclick = () => window.open(img.src, '_blank');
   
