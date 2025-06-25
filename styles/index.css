@@ -69,6 +69,10 @@ footer span{
 footer span a{
     color: #A91125;
     cursor: pointer;
+    transition: 0.2s;
+}
+footer span a:hover{
+    font-weight: 600;
 }
 footer > div{
     display: flex;
