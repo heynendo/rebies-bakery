@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px theme('colors.white') inset !important;
+    -webkit-text-fill-color: theme('colors.black') !important;
+  }
+}
+:root{
+  --color-primary: #A91125;
+  --color-secondary: #181818;
+  --font-sm: 0.75em;
+  --font-md: 1em;
+  --font-lg: 1.25em;
+  --spacing: 10px;
+  --header-margin: 120px;
+  --space-letters: 5px;
+  --transition-speed: 0.2s;
+}
+*{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body{
+  font-family: "Century Gothic","Apple Gothic",sans-serif;
+  background-color: #eeeeee;
+}
+.body-title{
+  font-weight: 700;
+  font-size: 4.5em;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 50px auto;
+  cursor: default;
+}
+.basic-button{
+    display: block;
+    height: 50px;
+    width: 25vw;
+    font-weight: 700;
+    font-size: 1.2em;
+    border-radius: 10px;
+    color: white;
+    background-color: #181818;
+    text-align: center;
+    align-content: center;
+    margin: 50px auto;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    transition: var(--transition-speed);
+}
+.basic-button:hover{
+    background-color: var(--color-primary);
+}
+@media (max-width: 750px){
+  .body-title{
+    font-size: 2.75em;
+  }
+  .basic-button{
+    height: 35px;
+    width: 50vw;
+    font-weight: 700;
+    font-size: 0.9em;
+    margin: 25px auto;
+  }
+}
