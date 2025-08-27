@@ -40,7 +40,7 @@ function Home(){
                 <div className='card'></div>
                 <img src={facebookLogo} />
                 <p>Follow ReBie's Bakery on Facebook! Stay up to date on specials and learn more about the business</p>
-                <a href="https://facebook.com" target="_blank" className='basic-button'>go to page</a>
+                <a href="https://www.facebook.com/profile.php?id=61573868559765" target="_blank" className='basic-button'>go to page</a>
             </div>
         </div>
     )

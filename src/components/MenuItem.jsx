@@ -12,6 +12,10 @@ function MenuItem({item}){
 
     const [primaryCat, ...otherCats] = nonEmpty
 
+    const imageSrc = item.image
+        ? new URL(`../assets/menu/${item.image}`, import.meta.url).href
+        : rebiesLogo
+
     return(
         <>
         <div className="menu-item">
@@ -24,7 +28,7 @@ function MenuItem({item}){
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
                         exit={{ opacity: 0, height: 0 }}
-                        transition={{ duration: 0.5, ease: "easeInOut" }}
+                        transition={{ duration: 0.5 }}
                     >
                         {primaryCat[0] !== "general" && <h4>{primaryCat[0]}</h4>}
                         <ul>
@@ -38,22 +42,22 @@ function MenuItem({item}){
                 </div>
                 <AnimatePresence>
                 {toggle && <motion.img 
-                    src={item.image || rebiesLogo} 
+                    src={imageSrc} 
                     initial={{ height: 0, opacity: 0 }}
                     animate={{
                         height: "auto",
                         opacity: 1,
                         transition: {
-                        height: { duration: 0.25, ease: "easeOut" },
-                        opacity: { duration: 0.25, ease: "easeOut", delay: 0.5 },
+                        height: { duration: 0.25},
+                        opacity: { duration: 0.25, delay: 0.5 },
                         },
                     }}
                     exit={{
                         height: 0,
                         opacity: 0,
                         transition: {
-                        height: { duration: 0.25, ease: "easeIn", delay: 0.5 },
-                        opacity: { duration: 0.25, ease: "easeIn" },
+                        height: { duration: 0.25, delay: 0.5 },
+                        opacity: { duration: 0.25 },
                         },
                     }}
                 />}
@@ -65,7 +69,7 @@ function MenuItem({item}){
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: 1, height: "auto" }}
                 exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
+                transition={{ duration: 0.5 }}
             >
                 {otherCats.map(([title, values]) => (
                 <div className="details" key={title}>

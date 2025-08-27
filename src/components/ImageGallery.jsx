@@ -65,63 +65,61 @@ function ImageGallery({ sectionKey }) {
             <h3>{section.title}</h3>
             <p>{section.paragraph}</p>
 
-            {loading ? 
-                <ImageLoader />
-                :
-                <AnimatePresence initial={false}>
+            {loading ?
+                <AnimatePresence mode="wait">
                     <motion.div
-                        key={toggle ? 'full' : 'preview'}
-                        initial={{ opacity: 0, height: 0, transition:{
-                            height: { duration: 0.5, delay: 0.5 },
-                            opacity: { duration: 0.5, delay: 1 }
-                        }}}
-                        animate={{ opacity: 1, height: 'auto'}}
-                        exit={{ opacity: 0, height: 0, transition:{
-                            height: { duration: 0.5, delay: 0.5 },
-                            opacity: { duration: 0.5, delay: 0.5 }
-                        }}} 
-                        className={toggle ? 'gallery-full' : 'gallery-preview'}
-                        style={toggle && { columnCount: section.columnNum }}
-                        >
-                        {imagesToShow.map((src, i) => (
-                            <img
-                            key={i}
-                            src={src}
-                            title="Click to open in a new page"
-                            onClick={() => window.open(src, '_blank')}
-
-                            />
-                        ))}
+                        key="loader"
+                        initial={{ 
+                            opacity: 0, 
+                            height: 350 
+                        }}
+                        animate={{
+                            opacity: 1,
+                            height: "auto",
+                            transition: {
+                                opacity: { duration: 0.25, delay: 0.75 },
+                                height: { duration: 0.25, delay: 0.5 }
+                            }
+                        }}
+                        exit={{
+                            opacity: 0,
+                            height: 375,
+                            transition: {
+                                opacity: { duration: 0.25, delay: 0 },
+                                height: { duration: 0.25, delay: 0.25 }
+                            }
+                        }}
+                    >
+                        <ImageLoader />
                     </motion.div>
                 </AnimatePresence>
-            }
-            {/*loading ?
-                <AnimatePresence>
-                    <motion.ImageLoader 
-                        initial={{ opacity: 0, height: 0, transition:{
-                            height: { duration: 0.5 },
-                            opacity: { duration: 0.5, delay: 0.5 }
-                        }}}
-                        animate={{ opacity: 1, height: 'auto'}}
-                        exit={{ opacity: 0, height: 0, transition:{
-                            height: { duration: 0.5, delay: 0.5 },
-                            opacity: { duration: 0.5 }
-                        }}} 
-                    />
-                </AnimatePresence>
                 :
-                <AnimatePresence initial={false}>
+                <AnimatePresence mode="wait">
                     {toggle ?
-                        <motion.div className='gallery-full'
-                            initial={{ opacity: 0, height: 0, transition:{
-                            height: { duration: 0.5 },
-                            opacity: { duration: 0.5, delay: 0.5 }
-                            }}}
-                            animate={{ opacity: 1, height: 'auto'}}
-                            exit={{ opacity: 0, height: 0, transition:{
-                                height: { duration: 0.5, delay: 0.5 },
-                                opacity: { duration: 0.5 }
-                            }}} 
+                        <motion.div
+                            key="full"
+                            className="gallery-full"
+                            style={{ columnCount: section.columnNum }}
+                            initial={{ 
+                                opacity: 0, 
+                                height: 375 
+                            }}
+                            animate={{
+                                opacity: 1,
+                                height: "auto",
+                                transition: {
+                                    opacity: { duration: 0.25, delay: 0.75 },
+                                    height: { duration: 0.25, delay: 0.5 }
+                                }
+                            }}
+                            exit={{
+                                opacity: 0,
+                                height: 245,
+                                transition: {
+                                    opacity: { duration: 0.25, delay: 0 },
+                                    height: { duration: 0.25, delay: 0.25 }
+                                }
+                            }}
                         >
                             {imagesToShow.map((src, i) => (
                                 <img
@@ -134,16 +132,29 @@ function ImageGallery({ sectionKey }) {
                             ))}
                         </motion.div>
                         :
-                        <motion.div className='gallery-preview'
-                            initial={{ opacity: 0, height: 0, transition:{
-                            height: { duration: 0.5 },
-                            opacity: { duration: 0.5, delay: 0.5 }
-                            }}}
-                            animate={{ opacity: 1, height: 'auto'}}
-                            exit={{ opacity: 0, height: 0, transition:{
-                                height: { duration: 0.5, delay: 0.5 },
-                                opacity: { duration: 0.5 }
-                            }}} 
+                        <motion.div
+                            key="preview"
+                            className="gallery-preview"
+                            initial={{ 
+                                opacity: 0, 
+                                height: 245 
+                            }}
+                            animate={{
+                                opacity: 1,
+                                height: "auto",
+                                transition: {
+                                    opacity: { duration: 0.25, delay: 0.75 },
+                                    height: { duration: 0.25, delay: 0.5 }
+                                }
+                            }}
+                            exit={{
+                                opacity: 0,
+                                height: 375,
+                                transition: {
+                                    opacity: { duration: 0.25, delay: 0 },
+                                    height: { duration: 0.25, delay: 0.25 }
+                                }
+                            }}
                         >
                             {imagesToShow.map((src, i) => (
                                 <img
@@ -157,7 +168,7 @@ function ImageGallery({ sectionKey }) {
                         </motion.div>
                     }
                 </AnimatePresence>
-            */}
+            }
 
             <button className="basic-button" onClick={() => setToggle(x => !x)}>
                 {toggle ? 'see less' : 'see more'}

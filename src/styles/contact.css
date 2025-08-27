@@ -122,6 +122,20 @@
 .contact form > .success{
     width: 100%;
     justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.25px;
+}
+.contact form > .error{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.25px;
+    margin: auto;
+    text-decoration: none;
 }
 
 @media (max-width: 750px){

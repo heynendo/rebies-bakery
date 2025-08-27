@@ -10,6 +10,7 @@ function Contact(){
         message: ''
     })
     const [errors, setErrors] = useState({})
+    const [sendError, setSendError] = useState("")
     const [submitted, setSubmitted] = useState(false)
 
     function UpdateData(e){
@@ -19,6 +20,9 @@ function Contact(){
             ...prevInput,
             [name]: value
         }))
+
+        if (submitted) setSubmitted(false)
+        if (sendError) setSendError("")
     }
 
     function validate(){
@@ -54,16 +58,13 @@ function Contact(){
         }
 
         try {
-            const res = await fetch("https://formsubmit.co/heynen.donovan@gmail.com", {
+            const res = await fetch("https://formsubmit.co/rebiesbakery@gmail.com", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({
-                    name: userInput.name,
-                    email: userInput.email,
-                    subject: userInput.subject,
-                    message: userInput.message
-                })
-            });
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: new URLSearchParams(userInput).toString()
+            })
 
             if (res.ok) {
                 setSubmitted(true)
@@ -71,9 +72,11 @@ function Contact(){
                 setUserInput({ name: "", email: "", subject: "", message: "" })
             } else {
                 console.error("Form submission failed")
+                setSendError("Message failed to send")
             }
         } catch (err) {
             console.error("Error sending form:", err)
+            setSendError("Message failed to send")
         }
     }
 
@@ -129,7 +132,8 @@ function Contact(){
                             autoComplete="off" 
                         />
                     </div>
-                    {submitted && <div className='success'>Your message has been sent.</div>}
+                    {submitted && <div className='success'>Your message has been sent!</div>}
+                    {sendError && <div className='error'>{sendError}</div>}
                     <button type='submit' className='basic-button'>send</button>
                 </form>
             </div>

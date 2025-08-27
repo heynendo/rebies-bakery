@@ -9,7 +9,7 @@ import '../styles/header.css'
 const linkVariants = {
   hidden: { height: 0, opacity: 0, y: -50 },
   visible: { height: "auto", opacity: 1, y: 0 },
-  exit: { height: 0, opacity: 0, y: -50 }
+  exit: { height: 5, opacity: 0, y: -50 }
 }
 
 const containerVariants = {
@@ -68,7 +68,7 @@ function Header() {
                     to='contact'
                     className={currentPage === "contact" ? "underline decoration-[#B50030] decoration-4" : "underline decoration-[#B5003000] decoration-4"}    
                 >Contact</Link>
-                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://www.facebook.com/profile.php?id=61573868559765" target="_blank">Facebook</a>
                 </>
                 :
                 <>
@@ -95,26 +95,26 @@ function Header() {
                 >
                     {currentPage !== 'home' && (
                         <motion.div variants={linkVariants}>
-                            <Link to='/' onClick={scrollToTop}>Home</Link>
+                            <Link onClick={scrollToTop} to='/'>Home</Link>
                         </motion.div>
                     )}
                     {currentPage !== 'about' && (
                         <motion.div variants={linkVariants}>
-                            <Link to='/about' onClick={scrollToTop}>About</Link>
+                            <Link onClick={scrollToTop} to='/about'>About</Link>
                         </ motion.div>
                     )}
                     {currentPage !== 'menu' && (
                         <motion.div variants={linkVariants}>
-                            <Link to='/menu' onClick={scrollToTop}>Menu</Link>
+                            <Link onClick={scrollToTop} to='/menu'>Menu</Link>
                         </ motion.div>
                     )}
                     {currentPage !== 'contact' && (
                         <motion.div variants={linkVariants}>
-                            <Link to='contact' onClick={scrollToTop}>Contact</Link>
+                            <Link onClick={scrollToTop} to='contact'>Contact</Link>
                         </ motion.div>
                     )}
                     <motion.div variants={linkVariants}>
-                        <a href="https://facebook.com" target="_blank">Facebook</a>
+                        <a href="https://www.facebook.com/profile.php?id=61573868559765" target="_blank">Facebook</a>
                     </motion.div>
                 </motion.div>
             }
