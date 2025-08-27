@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import rebiesLogo from "../assets/rebies-logo.jpg"
 import '../styles/menu-item.css'

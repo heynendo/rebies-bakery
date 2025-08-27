@@ -6,8 +6,16 @@ import ImageLoader from './ImageLoader'
 function ImageGallery({ sectionKey }) {
     const [toggle, setToggle] = useState(false)
     const [loading, setLoading] = useState(false)
+    const [width, setWidth] = useState(window.innerWidth)
     const galleryRef = useRef(null)
     const prevToggle = useRef(toggle)
+
+    useEffect(() => {
+        const handleResize = () => setWidth(window.innerWidth)
+
+        window.addEventListener("resize", handleResize)
+        return () => window.removeEventListener("resize", handleResize)
+    }, [])
 
     const section = gallery[sectionKey]
 
@@ -71,22 +79,22 @@ function ImageGallery({ sectionKey }) {
                         key="loader"
                         initial={{ 
                             opacity: 0, 
-                            height: 350 
+                            minHeight: 350 
                         }}
                         animate={{
                             opacity: 1,
-                            height: "auto",
+                            minHeight: "auto",
                             transition: {
                                 opacity: { duration: 0.25, delay: 0.75 },
-                                height: { duration: 0.25, delay: 0.5 }
+                                minHeight: { duration: 0.25, delay: 0.5 }
                             }
                         }}
                         exit={{
                             opacity: 0,
-                            height: 375,
+                            minHeight: 375,
                             transition: {
                                 opacity: { duration: 0.25, delay: 0 },
-                                height: { duration: 0.25, delay: 0.25 }
+                                minHeight: { duration: 0.25, delay: 0.25 }
                             }
                         }}
                     >
@@ -99,25 +107,25 @@ function ImageGallery({ sectionKey }) {
                         <motion.div
                             key="full"
                             className="gallery-full"
-                            style={{ columnCount: section.columnNum }}
+                            style={width > 600 && { columnCount: section.columnNum }}
                             initial={{ 
                                 opacity: 0, 
-                                height: 375 
+                                minHeight: 375 
                             }}
                             animate={{
                                 opacity: 1,
-                                height: "auto",
+                                minHeight: "auto",
                                 transition: {
                                     opacity: { duration: 0.25, delay: 0.75 },
-                                    height: { duration: 0.25, delay: 0.5 }
+                                    minHeight: { duration: 0.25, delay: 0.5 }
                                 }
                             }}
                             exit={{
                                 opacity: 0,
-                                height: 245,
+                                minHeight: 245,
                                 transition: {
                                     opacity: { duration: 0.25, delay: 0 },
-                                    height: { duration: 0.25, delay: 0.25 }
+                                    minHeight: { duration: 0.25, delay: 0.25 }
                                 }
                             }}
                         >
@@ -137,22 +145,22 @@ function ImageGallery({ sectionKey }) {
                             className="gallery-preview"
                             initial={{ 
                                 opacity: 0, 
-                                height: 245 
+                                minHeight: 245 
                             }}
                             animate={{
                                 opacity: 1,
-                                height: "auto",
+                                minHeight: "auto",
                                 transition: {
                                     opacity: { duration: 0.25, delay: 0.75 },
-                                    height: { duration: 0.25, delay: 0.5 }
+                                    minHeight: { duration: 0.25, delay: 0.5 }
                                 }
                             }}
                             exit={{
                                 opacity: 0,
-                                height: 375,
+                                minHeight: 375,
                                 transition: {
                                     opacity: { duration: 0.25, delay: 0 },
-                                    height: { duration: 0.25, delay: 0.25 }
+                                    minHeight: { duration: 0.25, delay: 0.25 }
                                 }
                             }}
                         >
