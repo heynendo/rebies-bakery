@@ -20,14 +20,6 @@ function Menu(){
 
 
     return(
-        <>
-        {/*<div className="menu">
-            <PageTitle content="Menu" />
-            <div className='container'>
-                <div className='break'/>
-                {menuData.menu.map(item => <MenuItem item = {item} key={item.name}/>)}
-            </div>
-        </div>*/}
         <div className="menu">
             <PageTitle content="Menu" />
             <div className='container'>
@@ -41,7 +33,6 @@ function Menu(){
                 </div>
             </div>
         </div>
-        </>
     )
 }
 

@@ -1,50 +1,13 @@
-/*import { useState, useEffect } from "react"
-import { motion, AnimatePresence} from "framer-motion"
-import '../styles/hero-banner.css'
-
-const images = [
-    "/src/assets/heroBanner/img1.png",
-    "/src/assets/heroBanner/img2.png",
-    "/src/assets/heroBanner/img3.png",
-    "/src/assets/heroBanner/img4.png",
-    "/src/assets/heroBanner/img5.png"
-]
-
-function HeroBanner(){
-    const [index, setIndex] = useState(0)
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setIndex((prev) => (prev + 1) % images.length)
-        }, 3000)
-
-        return () => clearInterval(interval)
-    },[])
-
-    return(
-        <div 
-            className="hero-banner" 
-            style={{ backgroundImage: `url(${images[index]})`}}
-        >
-            <span>you dream it...</span>
-            <span>we can bake it!</span>
-        </div>
-    )
-}
-
-export default HeroBanner*/
-
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
 import "../styles/hero-banner.css"
+import img1 from "../assets/heroBanner/img1.png"
+import img2 from "../assets/heroBanner/img2.png"
+import img3 from "../assets/heroBanner/img3.png"
+import img4 from "../assets/heroBanner/img4.png"
+import img5 from "../assets/heroBanner/img5.png"
 
-const images = [
-  "/src/assets/heroBanner/img1.png",
-  "/src/assets/heroBanner/img2.png",
-  "/src/assets/heroBanner/img3.png",
-  "/src/assets/heroBanner/img4.png",
-  "/src/assets/heroBanner/img5.png"
-]
+const images = [img1, img2, img3, img4, img5]
 
 function HeroBanner() {
   const [index, setIndex] = useState(0)
@@ -57,6 +20,16 @@ function HeroBanner() {
     }, 4000)
     return () => clearInterval(interval)
   }, [])
+
+  useEffect(() => {
+        images.forEach(src => {
+          const link = document.createElement("link")
+          link.rel = "preload"
+          link.as = "image"
+          link.href = src
+          document.head.appendChild(link)
+        })
+    }, [])
 
   const nextImage = images[index]
   const prevImage = images[index === 0 ? images.length - 1 : index - 1]

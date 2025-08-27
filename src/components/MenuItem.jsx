@@ -6,9 +6,6 @@ import '../styles/menu-item.css'
 
 function MenuItem({item}){
     const [toggle, setToggle] = useState(false)
-    
-
-    //add framer motion transitions going from toggle on/off
 
     const entries = Object.entries(item?.details || {})
     const nonEmpty = entries.filter(([, arr]) => Array.isArray(arr) && arr.length > 0)

@@ -71,13 +71,15 @@ function ImageGallery({ sectionKey }) {
                 <AnimatePresence initial={false}>
                     <motion.div
                         key={toggle ? 'full' : 'preview'}
-                        initial={{ opacity: 0, height: 0 }}
+                        initial={{ opacity: 0, height: 0, transition:{
+                            height: { duration: 0.5, delay: 0.5 },
+                            opacity: { duration: 0.5, delay: 1 }
+                        }}}
                         animate={{ opacity: 1, height: 'auto'}}
-                        exit={{ opacity: 0, height: 0 }} 
-                        transition={{
-                            height: { duration: 0.5 },
-                            opacity: { duration: 0.5, delay: 0.75 }
-                        }}
+                        exit={{ opacity: 0, height: 0, transition:{
+                            height: { duration: 0.5, delay: 0.5 },
+                            opacity: { duration: 0.5, delay: 0.5 }
+                        }}} 
                         className={toggle ? 'gallery-full' : 'gallery-preview'}
                         style={toggle && { columnCount: section.columnNum }}
                         >
@@ -93,6 +95,69 @@ function ImageGallery({ sectionKey }) {
                     </motion.div>
                 </AnimatePresence>
             }
+            {/*loading ?
+                <AnimatePresence>
+                    <motion.ImageLoader 
+                        initial={{ opacity: 0, height: 0, transition:{
+                            height: { duration: 0.5 },
+                            opacity: { duration: 0.5, delay: 0.5 }
+                        }}}
+                        animate={{ opacity: 1, height: 'auto'}}
+                        exit={{ opacity: 0, height: 0, transition:{
+                            height: { duration: 0.5, delay: 0.5 },
+                            opacity: { duration: 0.5 }
+                        }}} 
+                    />
+                </AnimatePresence>
+                :
+                <AnimatePresence initial={false}>
+                    {toggle ?
+                        <motion.div className='gallery-full'
+                            initial={{ opacity: 0, height: 0, transition:{
+                            height: { duration: 0.5 },
+                            opacity: { duration: 0.5, delay: 0.5 }
+                            }}}
+                            animate={{ opacity: 1, height: 'auto'}}
+                            exit={{ opacity: 0, height: 0, transition:{
+                                height: { duration: 0.5, delay: 0.5 },
+                                opacity: { duration: 0.5 }
+                            }}} 
+                        >
+                            {imagesToShow.map((src, i) => (
+                                <img
+                                key={i}
+                                src={src}
+                                title="Click to open in a new page"
+                                onClick={() => window.open(src, '_blank')}
+
+                                />
+                            ))}
+                        </motion.div>
+                        :
+                        <motion.div className='gallery-preview'
+                            initial={{ opacity: 0, height: 0, transition:{
+                            height: { duration: 0.5 },
+                            opacity: { duration: 0.5, delay: 0.5 }
+                            }}}
+                            animate={{ opacity: 1, height: 'auto'}}
+                            exit={{ opacity: 0, height: 0, transition:{
+                                height: { duration: 0.5, delay: 0.5 },
+                                opacity: { duration: 0.5 }
+                            }}} 
+                        >
+                            {imagesToShow.map((src, i) => (
+                                <img
+                                key={i}
+                                src={src}
+                                title="Click to open in a new page"
+                                onClick={() => window.open(src, '_blank')}
+
+                                />
+                            ))}
+                        </motion.div>
+                    }
+                </AnimatePresence>
+            */}
 
             <button className="basic-button" onClick={() => setToggle(x => !x)}>
                 {toggle ? 'see less' : 'see more'}

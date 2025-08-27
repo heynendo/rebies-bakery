@@ -3,7 +3,7 @@
     {
       "name": "Custom Cakes",
       "price": "$80.00+",
-      "image": "src/assets/menu/menu-cake.jpg",
+      "image": "../assets/menu/menu-cake.jpg",
       "details": {
         "general": [],
         "sizes": ["6” - $80.00+", "8” - $100.00+", "2 Tier - $180.00+"]
@@ -12,7 +12,7 @@
     {
       "name": "Cupcakes",
       "price": "$38.00+",
-      "image": "src/assets/menu/menu-cupcake.png",
+      "image": "../assets/menu/menu-cupcake.png",
       "details": {
         "general": ["Sold by the dozen", "Gourmet or stuffed", "Standard size or mini"],
         "flavors": [
@@ -42,7 +42,7 @@
     {
       "name": "Gourmet Cookies",
       "price": "$36.00+",
-      "image": "src/assets/cookies.png",
+      "image": "../assets/cookies.png",
       "details": {
         "general": ["Sold by the dozen", "Order “THE BIG ONE” (jumbo cookie)"],
         "flavors": [

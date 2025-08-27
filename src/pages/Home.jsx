@@ -7,25 +7,8 @@ import facebookLogo from "../assets/facebook-logo.png"
 import HeroBanner from "../components/HeroBanner"
 import scrollToTop from "../functions/scrollToTop"
 import '../styles/home.css'
-import img1 from "../assets/heroBanner/img1.png"
-import img2 from "../assets/heroBanner/img2.png"
-import img3 from "../assets/heroBanner/img3.png"
-import img4 from "../assets/heroBanner/img4.png"
-import img5 from "../assets/heroBanner/img5.png"
-
-const images = [img1, img2, img3, img4, img5]
 
 function Home(){
-
-    useEffect(() => {
-        images.forEach(src => {
-        const link = document.createElement("link")
-        link.rel = "preload"
-        link.as = "image"
-        link.href = src
-        document.head.appendChild(link)
-        })
-    }, [])
 
     return(
         <div className="home">
