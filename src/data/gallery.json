@@ -1,0 +1,98 @@
+{
+  "customcakes": {
+    "title": "custom cakes",
+    "paragraph": "I make custom cakes that are both beautiful and delicious, tailored to each customer's vision. From elegant wedding designs to fun birthday themes, I love bringing ideas to life with every layer and detail. I use high-quality ingredients and take pride in creating something special for every celebration. Every cake is a blend of creativity, flavor, and a whole lot of love.",
+    "preview": [
+        "customcake-img17.jpg",
+        "customcake-img10.jpg",
+        "customcake-img3.jpeg",
+        "customcake-img15.jpeg"
+    ],
+    "gallery": [
+        "customcake-img1.jpeg",
+        "customcake-img2.jpeg",
+        "customcake-img3.jpeg",
+        "customcake-img4.jpeg",
+        "customcake-img5.jpeg",
+        "customcake-img6.jpeg",
+        "customcake-img7.jpeg",
+        "customcake-img8.jpg",
+        "customcake-img9.jpeg",
+        "customcake-img10.jpg",
+        "customcake-img11.jpg",
+        "customcake-img12.jpeg",
+        "customcake-img13.jpeg",
+        "customcake-img14.jpeg",
+        "customcake-img15.jpeg",
+        "customcake-img16.jpg",
+        "customcake-img17.jpg",
+        "customcake-img18.jpg",
+        "customcake-img19.jpg"
+    ],
+    "columnNum": 5
+  },
+  "cupcakes": {
+    "title": "cupcakes",
+    "paragraph": "I bake a variety of cupcakes using creative designs that keep customers coming back for more. One of my specialties is creating cupcake-cakes; arrangements of cupcakes that form shapes like numbers, letters, or characters, perfect for birthdays and celebrations. I love how each order lets me combine artistry with baking, turning simple cupcakes into something unforgettable.",
+    "preview": [
+        "cupcake-img7.png",
+        "cupcake-img9.png",
+        "cupcake-img10.png"
+    ],
+    "gallery": [
+        "cupcake-img1.png",
+        "cupcake-img2.png",
+        "cupcake-img3.png",
+        "cupcake-img4.png",
+        "cupcake-img5.png",
+        "cupcake-img6.png",
+        "cupcake-img7.png",
+        "cupcake-img8.png",
+        "cupcake-img9.png",
+        "cupcake-img10.png",
+        "cupcake-img11.png",
+        "cupcake-img12.png"
+    ],
+    "columnNum": 4
+  },
+  "specialdesserts": {
+    "title": "special desserts",
+    "paragraph": "Outside of our cakes and cupcakes, we offer a delightful selection of specialty desserts. Whether you're celebrating an occasion or simply indulging in something sweet, our specialty desserts are designed to surprise and satisfy. Our offerings are always evolving, so there's always something new to discover and enjoy.",
+    "preview": [
+        "specialdesserts-img9.jpg",
+        "specialdesserts-img2.jpg",
+        "specialdesserts-img5.jpg"
+    ],
+    "gallery": [
+        "specialdesserts-img1.jpg",
+        "specialdesserts-img2.jpg",
+        "specialdesserts-img3.jpg",
+        "specialdesserts-img4.jpg",
+        "specialdesserts-img5.jpg",
+        "specialdesserts-img6.jpg",
+        "specialdesserts-img7.jpg",
+        "specialdesserts-img8.jpg",
+        "specialdesserts-img9.jpg",
+        "specialdesserts-img10.jpg",
+        "specialdesserts-img11.jpg",
+        "specialdesserts-img12.jpg"
+    ],
+    "columnNum": 4
+  },
+  "diapercakes": {
+    "title": "diaper cakes",
+    "paragraph": "I create diaper cakes that are both practical and beautifully designed, making them a perfect centerpiece for baby showers and new parent celebrations. Each cake is carefully styled with fun themes and decorative touches like ribbons, plush toys, and baby accessories. I love designing each one to feel special, turning everyday items into something charming and eye-catching.",
+    "preview": [
+        "diapercake-img2.png",
+        "diapercake-img5.png"
+    ],
+    "gallery": [
+        "diapercake-img1.png",
+        "diapercake-img2.png",
+        "diapercake-img3.png",
+        "diapercake-img4.png",
+        "diapercake-img5.png"
+    ],
+    "columnNum": 3
+  }
+}

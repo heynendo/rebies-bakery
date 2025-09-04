@@ -1,0 +1,62 @@
+header{
+    height: 120px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+}
+header > a{
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.2s;
+    min-width: 100px;
+    transition: 0.5s;
+}
+header > a:hover{
+    color: var(--color-primary);
+}
+header a > img{
+    height: 100px;
+}
+header .hamburger-menu{
+    height: 30px;
+    cursor: pointer;
+}
+header .mobile-menu{
+    width: 150px;
+    padding: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+}
+header .mobile-menu > h3{
+    cursor: default;
+}
+header > .dropdown{
+    background: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    border: white solid 5px;
+    overflow: hidden;
+}
+header .dropdown > div{
+    overflow: hidden;
+}
+header .dropdown div > a{
+    display: block;
+    text-align: start;
+    align-content: center;
+    padding-left: 12px;
+    width: 180px;
+    height: 40px;
+    background: #e0e0e0;
+    transition: 0.2s;
+    border: white solid 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+}
+header .dropdown div > a:hover{
+    background-color: var(--color-primary);
+    color: white;
+}

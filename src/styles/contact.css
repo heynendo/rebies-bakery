@@ -1,0 +1,186 @@
+.contact{
+    margin-top: var(--header-margin);
+    justify-self: center;
+}
+.contact > .grid{
+    width: 90vw;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 65% 1fr;
+    grid-gap: 5%;
+    margin: auto;
+}
+.contact .grid > .aside{
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+    grid-row: 1;
+    grid-column: 2;
+    align-content: space-around;
+    margin-bottom: 100px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.contact .grid .aside > p{
+    text-align: center;
+    padding: 15px;
+    font-weight: 700;
+    margin-bottom: 100px;
+    font-size: 1.25em;
+}
+.contact .grid .aside > a{
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.contact .grid .aside > a:hover{
+    color: var(--color-secondary)
+}
+.contact .grid > form{
+    background-color: var(--color-secondary);
+    color: white;
+    background-image: url('../assets/contact-background.png');
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+    border-radius: 10px;
+    width: 100%;
+    grid-row: 1;
+    grid-column: 1;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    display: block;
+    justify-items: center;
+    margin-bottom: 100px;
+    padding-top: 25px;
+}
+.contact form > .container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.contact form .container > label{
+    font-weight: 700;
+    font-size: 1.2em;
+    width: 22.5%;
+    text-align: end;
+}
+.contact form .container > input{
+    width: 65%;
+    height: 50px;
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    padding: 0 5px;
+    margin: 3px;
+    font-weight: 700;
+    font-size: 18px;
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 15px 5px;
+    color: black;
+    font-weight: 400;
+}
+.contact form .container > textarea{
+    width: 65%;
+    min-height: 200px;
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+    padding: 0 5px;
+    margin: 3px;
+    font-weight: 700;
+    font-size: 18px;
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 15px 5px;
+    color: black;
+    font-weight: 400;
+}
+.contact form > button{
+    background-color: var(--color-primary);
+}
+.contact form > button:hover{
+    background-color: white;
+    color: var(--color-secondary);
+}
+.contact form > .error{
+    position: relative;
+    transform: translateY(10px);
+    width: 100%;
+    justify-content: start;
+    margin-left: 50%;
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-color: #A91125;
+    -webkit-text-decoration-line: underline;
+    -webkit-text-decoration-color: #A91125;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}   
+.contact form > .success{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.25px;
+}
+.contact form > .error{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 0.25px;
+    margin: auto;
+    text-decoration: none;
+}
+
+@media (max-width: 750px){
+    .contact > .grid{
+        display: block;
+    }
+    .contact .grid > .aside{
+        margin-bottom: 50px;
+    }
+    .contact .grid .aside > p{
+        margin: 20px;
+        font-size: 1.15em;
+    }
+    .contact .grid .aside > a{
+        margin: 20px;
+    }
+    .contact .grid > form{
+        width: 90vw;
+    }
+    .contact form > .container{
+        width: 85vw;
+    }
+    .contact form .container > label{
+        font-weight: 700;
+        font-size: 1em;
+        width: 25%;
+    }
+    .contact form .container > input{
+        width: 70%;
+        height: 35px;
+        font-size: 0.9em;
+    }
+    .contact form .container > textarea{
+        width: 70%;
+        min-height: 160px;
+        font-size: 0.9em;
+    }
+    .contact form > .error{
+        margin-left: 55%;
+        font-size: 0.75em;
+    }   
+    .contact form > .success{
+        width: 100%;
+        justify-content: center;
+        font-size: 0.75em;
+    }
+}
