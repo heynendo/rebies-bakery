@@ -3,6 +3,10 @@ import PageTitle from '../components/PageTitle'
 import '../styles/contact.css'
 
 function Contact(){
+    const API_URL = import.meta.env.DEV
+        ? "http://localhost:8787/" // localhost dev
+        : "https://emailserver-resend.heynen-donovan.workers.dev/"
+
     const [userInput, setUserInput] = useState({
         name: '',
         email: '',
@@ -39,7 +43,6 @@ function Contact(){
         if (userInput.message.trim().length < 10) {
             newErrors.message = "Message must be at least 10 characters."
         }
-        console.log(newErrors)
         return newErrors
     }
 
@@ -53,30 +56,32 @@ function Contact(){
             setSubmitted(false)
             return
         } else {
-            console.log(userInput)
             setErrors({})
         }
 
         try {
-            const res = await fetch("https://formsubmit.co/rebiesbakery@gmail.com", {
+            const response = await fetch(API_URL, {
                 method: "POST",
                 headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
+                    "Content-Type": "application/json",
                 },
-                body: new URLSearchParams(userInput).toString()
+                body: JSON.stringify(userInput),
             })
-
-            if (res.ok) {
+            if (response.ok) {
+                console.log("Message sent:",  await response.text())
+                alert("Message sent.")
                 setSubmitted(true)
                 setErrors({})
                 setUserInput({ name: "", email: "", subject: "", message: "" })
             } else {
-                console.error("Form submission failed")
+                console.error("Failed to send message:", await response.text())
+                alert("Failed to send message")
                 setSendError("Message failed to send")
             }
         } catch (err) {
             console.error("Error sending form:", err)
             setSendError("Message failed to send")
+            alert("Failed to send message")
         }
     }
 
@@ -132,8 +137,8 @@ function Contact(){
                             autoComplete="off" 
                         />
                     </div>
-                    {submitted && <div className='success'>Your message has been sent!</div>}
-                    {sendError && <div className='error'>{sendError}</div>}
+                    {/*submitted && <div className='success'>Your message has been sent!</div>*/}
+                    {/*sendError && <div className='error'>{sendError}</div>*/}
                     <button type='submit' className='basic-button'>send</button>
                 </form>
             </div>
