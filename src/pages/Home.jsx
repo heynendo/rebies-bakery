@@ -9,6 +9,9 @@ import scrollToTop from "../functions/scrollToTop"
 import '../styles/home.css'
 
 function Home(){
+    useEffect(()=>{
+        scrollToTop()
+    })
 
     return(
         <div className="home">
