@@ -3,8 +3,14 @@ import PageTitle from '../components/PageTitle'
 import MenuItem from '../components/MenuItem'
 import menuData from '../data/menu.json'
 import '../styles/menu.css'
+import scrollToTop from '../functions/scrollToTop'
 
 function Menu(){
+
+    useEffect(()=>{
+        scrollToTop()
+    })
+
     const [width, setWidth] = useState(window.innerWidth)
 
     useEffect(() => {

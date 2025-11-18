@@ -1,8 +1,13 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import scrollToTop from '../functions/scrollToTop'
 import PageTitle from '../components/PageTitle'
 import '../styles/contact.css'
 
 function Contact(){
+    useEffect(()=>{
+        scrollToTop()
+    })
+    
     const API_URL = import.meta.env.DEV
         ? "http://localhost:8787/" // localhost dev
         : "https://emailserver-resend.heynen-donovan.workers.dev/"

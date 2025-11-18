@@ -2,8 +2,14 @@ import PageTitle from '../components/PageTitle'
 import marieHeadshot from '../assets/marie-headshot.png'
 import '../styles/about.css'
 import ImageGallery from '../components/ImageGallery'
+import { useEffect } from 'react'
+import scrollToTop from '../functions/scrollToTop'
 
 function About(){
+    useEffect(()=>{
+        scrollToTop()
+    })
+
     return(
         <div className="about">
             <PageTitle content="About Me" />
