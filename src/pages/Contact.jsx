@@ -95,8 +95,10 @@ function Contact(){
             <PageTitle content="Let's Chat" />
             <div className='grid'>
                 <div className='aside'>
-                    <p>Have something specific in mind? Send an email and let me know what you're looking for!</p>
+                    <p>Have something specific in mind? Fill out the form, send an email, or give me a call and let me know what you're looking for!</p>
                     <a href="mailto:rebiesbakery@gmail.com">rebiesbakery@gmail.com</a>
+                    <div className='break'/>
+                    <a href="tel:7082594314">708-259-4314</a>
                 </div>
                 <form onSubmit={SendUserData}>
                     {errors.name && <div className='error'>{errors.name}</div>}

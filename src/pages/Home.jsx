@@ -16,7 +16,12 @@ function Home(){
     return(
         <div className="home">
             <HeroBanner />
-            <Link to='/contact' onClick={scrollToTop} className="basic-button">schedule now</Link>
+            <div className='contacts'>
+                <Link to='/contact' onClick={scrollToTop} className="basic-button">schedule now</Link>
+                <button className="basic-button phone-number"
+                    onClick={() => window.location.href = "tel:7082594314"}
+                >call today! 708-259-4314</button>
+            </div>
             
             <div className="card-container card-about">
                 <div className='card'></div>

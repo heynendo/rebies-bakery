@@ -2,6 +2,14 @@
     margin-top: var(--header-margin);
     justify-items: center;
 }
+.home > .contacts{
+    display: flex;
+    gap: 100px;
+}
+.home > .contacts > a,
+.home > .contacts > .phone-number{
+    min-width: 250px;
+}
 .card-container{
     display: grid;
     width: 90vw;
@@ -115,6 +123,15 @@
 }
 
 @media (max-width: 800px){
+    .home > .contacts{
+        flex-direction: column;
+        gap: 10px;
+        margin: 25px 0;
+    }
+    .home > .contacts > a,
+    .home > .contacts > .phone-number{
+        margin: 10px auto;
+    }
     .card-container{
         width: 85vw;
         grid-template-columns: 1fr 45vw 1fr;
