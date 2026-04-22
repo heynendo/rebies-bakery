@@ -6,7 +6,7 @@ import '../styles/contact.css'
 function Contact(){
     useEffect(()=>{
         scrollToTop()
-    })
+    },[])
     
     const API_URL = import.meta.env.DEV
         ? "http://localhost:8787/" // localhost dev

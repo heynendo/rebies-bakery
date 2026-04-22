@@ -56,6 +56,21 @@ body{
 .basic-button:hover{
     background-color: var(--color-primary);
 }
+.not-found{
+  min-height: 100vh;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  padding: 0 25px;
+}
+.not-found > .container{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 @media (max-width: 750px){
   .body-title{
     font-size: 2.75em;

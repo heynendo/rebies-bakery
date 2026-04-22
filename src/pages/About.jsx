@@ -8,7 +8,7 @@ import scrollToTop from '../functions/scrollToTop'
 function About(){
     useEffect(()=>{
         scrollToTop()
-    })
+    },[])
 
     return(
         <div className="about">
