@@ -21,7 +21,6 @@ function About(){
             <ImageGallery sectionKey="customcakes"/>
             <ImageGallery sectionKey="cupcakes"/>
             <ImageGallery sectionKey="specialdesserts"/>
-            <ImageGallery sectionKey="diapercakes"/>
         </div>
     )
 }
