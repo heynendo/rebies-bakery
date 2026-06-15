@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import marieHeadshot from '../assets/marie-headshot.png'
 import cookiesImg from "../assets/cookies.png"
 import cakeImg from "../assets/home-cake.jpeg"
@@ -7,8 +7,12 @@ import facebookLogo from "../assets/facebook-logo.png"
 import HeroBanner from "../components/HeroBanner"
 import scrollToTop from "../functions/scrollToTop"
 import '../styles/home.css'
+import BottomBanner from '../components/BottomBanner'
 
 function Home(){
+
+    const [showBanner, setShowBanner] = useState(true)
+
     useEffect(()=>{
         scrollToTop()
     },[])
@@ -22,7 +26,16 @@ function Home(){
                     onClick={() => window.location.href = "tel:7082594314"}
                 >call today! 708-259-4314</button>
             </div>
-            
+            <BottomBanner 
+                content={
+                    <>
+                    <p>Rebie's Bakery is now at the Oak Forest Farmer's Market!</p>
+                    <button>learn more</button>
+                    </>
+                }
+                showBanner={showBanner}
+                setShowBanner={setShowBanner}
+            />
             <div className="card-container card-about">
                 <div className='card'></div>
                 <img src={marieHeadshot} />
