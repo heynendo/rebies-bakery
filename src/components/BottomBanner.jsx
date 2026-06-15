@@ -1,6 +1,6 @@
 import { Exit1 } from "icons-by-heynendo";
 import "../styles/bottom-banner.css";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion } from "motion/react";
 
 
 export default function BottomBanner({showBanner, setShowBanner, content}){

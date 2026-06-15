@@ -121,7 +121,11 @@
     background-color: white;
     color: var(--color-primary);
 }
-
+.home .farmers-market-flyer{
+    height: 90vh;
+    aspect-ratio: 960/1440;
+    /*TODO: Test on every device type*/
+}
 @media (max-width: 800px){
     .home > .contacts{
         flex-direction: column;
