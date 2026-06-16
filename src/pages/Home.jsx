@@ -9,7 +9,7 @@ import scrollToTop from "../functions/scrollToTop"
 import '../styles/home.css'
 import BottomBanner from '../components/BottomBanner'
 import Popout from '../components/Popout'
-import FarmersMarketFlyer from '/farmersMarketFlyer.jpg'
+import FarmersMarketFlyer from '../assets/farmersMarketFlyer.jpg'
 import usePreventScroll from '../functions/usePreventScroll'
 
 function Home(){
