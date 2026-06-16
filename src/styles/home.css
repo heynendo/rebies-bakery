@@ -124,6 +124,7 @@
 .home .farmers-market-flyer{
     height: 90vh;
     aspect-ratio: 960/1440;
+    border-radius: 5px;
 }
 @media (max-width: 600px){
     .home .farmers-market-flyer{

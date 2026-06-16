@@ -1,4 +1,36 @@
 {
+    "newCustomcakes": {
+    "title": "custom cakes",
+    "paragraph": "I make custom cakes that are both beautiful and delicious, tailored to each customer's vision. From elegant wedding designs to fun birthday themes, I love bringing ideas to life with every layer and detail. I use high-quality ingredients and take pride in creating something special for every celebration. Every cake is a blend of creativity, flavor, and a whole lot of love.",
+    "preview": [
+        "customcake-img1.jpeg",
+        "customcake-img2.jpeg",
+        "customcake-img3.jpeg",
+        "customcake-img4.jpeg"
+    ],
+    "gallery": [
+        "customcake-img1.jpeg",
+        "customcake-img2.jpeg",
+        "customcake-img3.jpeg",
+        "customcake-img4.jpeg",
+        "customcake-img5.JPG",
+        "customcake-img6.jpeg",
+        "customcake-img7.jpeg",
+        "customcake-img8.jpeg",
+        "customcake-img9.jpeg",
+        "customcake-img10.jpeg",
+        "customcake-img11.JPG",
+        "customcake-img12.jpg",
+        "customcake-img13.jpeg",
+        "customcake-img14.jpeg",
+        "customcake-img15.jpeg",
+        "customcake-img16.jpeg",
+        "customcake-img17.jpeg",
+        "customcake-img18.JPG",
+        "customcake-img19.JPG"
+    ],
+    "columnNum": 5
+  },
   "customcakes": {
     "title": "custom cakes",
     "paragraph": "I make custom cakes that are both beautiful and delicious, tailored to each customer's vision. From elegant wedding designs to fun birthday themes, I love bringing ideas to life with every layer and detail. I use high-quality ingredients and take pride in creating something special for every celebration. Every cake is a blend of creativity, flavor, and a whole lot of love.",
