@@ -35,7 +35,7 @@ function Home(){
             <BottomBanner 
                 content={
                     <>
-                    <p>Rebie's Bakery is now at the Oak Forest Farmer's Market!</p>
+                    <p>visit us at the Oak Forest Farmer's Market!</p>
                     <button onClick={() => setShowPopout(true)}>learn more</button>
                     </>
                 }

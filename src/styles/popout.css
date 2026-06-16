@@ -11,24 +11,25 @@
     align-items: center;
     justify-content: center;
 }
-.popout > .content{
+.popout > .content {
     background-color: #FFFFFF;
     padding: 8px;
     border-radius: 10px;
+    position: relative; /* Add this */
 }
-.popout .close{
-    background-color: rgba(0, 0, 0, 0.35);
+
+.popout .close {
+    background-color: rgba(0, 0, 0, 0.75);
     border-radius: 100%;
     cursor: pointer;
     transition: ease-in 0.2s;
-    flex-shrink: 0;
-    z-index: 3;
+    z-index: 11;
     aspect-ratio: 1;
-    width: 30px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position:relative;
-    top: 50px;
-    z-index: 15;
+    position: absolute;
+    top: 25px;
+    right: 25px;
 }
