@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import marieHeadshot from '../assets/marie-headshot.png'
 import cookiesImg from "../assets/cookies.png"
 import cakeImg from "../assets/home-cake.jpeg"
@@ -7,11 +7,21 @@ import facebookLogo from "../assets/facebook-logo.png"
 import HeroBanner from "../components/HeroBanner"
 import scrollToTop from "../functions/scrollToTop"
 import '../styles/home.css'
+import BottomBanner from '../components/BottomBanner'
+import Popout from '../components/Popout'
+import FarmersMarketFlyer from '/farmersMarketFlyer.jpg'
+import usePreventScroll from '../functions/usePreventScroll'
 
 function Home(){
+
+    const [showBanner, setShowBanner] = useState(true)
+    const [showPopout, setShowPopout] = useState(false)
+
     useEffect(()=>{
         scrollToTop()
     },[])
+
+    usePreventScroll(showPopout)
 
     return(
         <div className="home">
@@ -22,7 +32,25 @@ function Home(){
                     onClick={() => window.location.href = "tel:7082594314"}
                 >call today! 708-259-4314</button>
             </div>
-            
+            <BottomBanner 
+                content={
+                    <>
+                    <p>visit us at the Oak Forest Farmer's Market!</p>
+                    <button onClick={() => setShowPopout(true)}>learn more</button>
+                    </>
+                }
+                showBanner={showBanner}
+                setShowBanner={setShowBanner}
+            />
+            <Popout
+                showPopout={showPopout}
+                setShowPopout={setShowPopout}
+            >
+                <img 
+                    src={FarmersMarketFlyer}
+                    className='farmers-market-flyer'
+                />
+            </Popout>
             <div className="card-container card-about">
                 <div className='card'></div>
                 <img src={marieHeadshot} />

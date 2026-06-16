@@ -28,6 +28,7 @@ function Menu(){
     return(
         <div className="menu">
             <PageTitle content="Menu" />
+            <span>More menu updates coming soon, stay tuned!</span>
             <div className='container'>
                 <div className='column'>
                     <div className='break'/>
