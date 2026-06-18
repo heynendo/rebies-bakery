@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import marieHeadshot from '../assets/marie-headshot.png'
-import cookiesImg from "../assets/cookies.png"
+import cookiesImg from "../assets/cookies.jpg"
 import cakeImg from "../assets/home-cake.jpeg"
 import facebookLogo from "../assets/facebook-logo.png"
 import HeroBanner from "../components/HeroBanner"
