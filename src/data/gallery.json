@@ -1,5 +1,5 @@
 {
-    "newCustomcakes": {
+    "customcakes": {
     "title": "custom cakes",
     "paragraph": "I make custom cakes that are both beautiful and delicious, tailored to each customer's vision. From elegant wedding designs to fun birthday themes, I love bringing ideas to life with every layer and detail. I use high-quality ingredients and take pride in creating something special for every celebration. Every cake is a blend of creativity, flavor, and a whole lot of love.",
     "preview": [
@@ -13,53 +13,22 @@
         "customcake-img2.jpeg",
         "customcake-img3.jpeg",
         "customcake-img4.jpeg",
-        "customcake-img5.JPG",
+        "customcake-img5.jpeg",
         "customcake-img6.jpeg",
         "customcake-img7.jpeg",
         "customcake-img8.jpeg",
         "customcake-img9.jpeg",
         "customcake-img10.jpeg",
-        "customcake-img11.JPG",
-        "customcake-img12.jpg",
+        "customcake-img11.jpeg",
+        "customcake-img12.jpeg",
         "customcake-img13.jpeg",
         "customcake-img14.jpeg",
         "customcake-img15.jpeg",
         "customcake-img16.jpeg",
         "customcake-img17.jpeg",
-        "customcake-img18.JPG",
-        "customcake-img19.JPG"
-    ],
-    "columnNum": 5
-  },
-  "customcakes": {
-    "title": "custom cakes",
-    "paragraph": "I make custom cakes that are both beautiful and delicious, tailored to each customer's vision. From elegant wedding designs to fun birthday themes, I love bringing ideas to life with every layer and detail. I use high-quality ingredients and take pride in creating something special for every celebration. Every cake is a blend of creativity, flavor, and a whole lot of love.",
-    "preview": [
-        "customcake-img17.jpg",
-        "customcake-img10.jpg",
-        "customcake-img3.jpeg",
-        "customcake-img15.jpeg"
-    ],
-    "gallery": [
-        "customcake-img1.jpeg",
-        "customcake-img2.jpeg",
-        "customcake-img3.jpeg",
-        "customcake-img4.jpeg",
-        "customcake-img5.jpeg",
-        "customcake-img6.jpeg",
-        "customcake-img7.jpeg",
-        "customcake-img8.jpg",
-        "customcake-img9.jpeg",
-        "customcake-img10.jpg",
-        "customcake-img11.jpg",
-        "customcake-img12.jpeg",
-        "customcake-img13.jpeg",
-        "customcake-img14.jpeg",
-        "customcake-img15.jpeg",
-        "customcake-img16.jpg",
-        "customcake-img17.jpg",
-        "customcake-img18.jpg",
-        "customcake-img19.jpg"
+        "customcake-img18.jpeg",
+        "customcake-img19.jpeg",
+        "customcake-img20.JPG"
     ],
     "columnNum": 5
   },
@@ -79,11 +48,10 @@
         "cupcake-img5.png",
         "cupcake-img6.png",
         "cupcake-img7.png",
-        "cupcake-img8.png",
+        "cupcake-img8.jpeg",
         "cupcake-img9.png",
         "cupcake-img10.png",
-        "cupcake-img11.png",
-        "cupcake-img12.png"
+        "cupcake-img11.png"
     ],
     "columnNum": 4
   },
@@ -93,21 +61,20 @@
     "preview": [
         "specialdesserts-img9.jpg",
         "specialdesserts-img2.jpg",
-        "specialdesserts-img5.jpg"
+        "specialdesserts-img3.jpeg"
     ],
     "gallery": [
-        "specialdesserts-img1.jpg",
+        "specialdesserts-img1.jpeg",
         "specialdesserts-img2.jpg",
-        "specialdesserts-img3.jpg",
-        "specialdesserts-img4.jpg",
-        "specialdesserts-img5.jpg",
+        "specialdesserts-img3.jpeg",
+        "specialdesserts-img4.jpeg",
+        "specialdesserts-img5.jpeg",
         "specialdesserts-img6.jpg",
         "specialdesserts-img7.jpg",
         "specialdesserts-img8.jpg",
         "specialdesserts-img9.jpg",
         "specialdesserts-img10.jpg",
-        "specialdesserts-img11.jpg",
-        "specialdesserts-img12.jpg"
+        "specialdesserts-img11.jpg"
     ],
     "columnNum": 4
   },
