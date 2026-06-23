@@ -1,0 +1,13 @@
+
+
+export default function FilterIcon({size=25, color="#A91125"}){
+    return(
+        <svg width={size} viewBox="0 0 25 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 3.125H25V0H0V3.125Z" fill={color}/>
+            <path d="M3.125 9.375H21.875V6.25H3.125V9.375Z" fill={color}/>
+            <path d="M6.25 15.625H18.75V12.5H6.25V15.625Z" fill={color}/>
+            <path d="M15.625 21.875H9.375V18.75H15.625V21.875Z" fill={color}/>
+        </svg>
+
+    )
+}

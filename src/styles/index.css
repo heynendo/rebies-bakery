@@ -27,6 +27,13 @@ body{
   font-family: "Century Gothic","Apple Gothic",sans-serif;
   background-color: #eeeeee;
 }
+h2{
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 105%;
+  color: var(--color-primary);
+  overflow: hidden;
+}
 .body-title{
   font-weight: 700;
   font-size: 4.5em;

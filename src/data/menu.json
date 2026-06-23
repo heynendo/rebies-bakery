@@ -1,12 +1,11 @@
-{
-  "menu": [
+[
     {
       "name": "Custom Cakes",
       "price": "$80.00+",
       "image": "menu-cake.jpg",
       "details": {
         "general": [],
-        "sizes": ["6” - $80.00+", "8” - $100.00+", "2 Tier - $200.00+"]
+        "sizes": ["6” - $80.00+", "8” - $100.00+", "2 Tier - $180.00+"]
       }
     },
     {
@@ -44,9 +43,9 @@
       "price": "$36.00+",
       "image": "cookies.png",
       "details": {
-        "general": ["Sold by the dozen"],
+        "general": ["Sold by the dozen", "Order “THE BIG ONE” (jumbo cookie)"],
         "flavors": [
-          "Original Chocolate Chip", "Triple Chocolate Chip", "Chocolate Chip Caramel Pretzel", "Salted Brownie", "Chocolate Covered Strawberry", "Pumpkin Chocolate Chip", "Caramel Chocolate Chip", "Turtle", "Walnut White Chocolate Drizzled", "Cranberry White Chocolate Chip", "Peanut Butter Chocolate Chunk", "Chocolate Caramel", "Dark Chocolate Chip", "Shortbread Raspberry Thumbprints", "Chocolate Caramel Thumbprints", "White Chocolate Swirled Kiss Gingerbreads",  "Salted Pecan Caramel", "Stuffed Dubai Chocolate", "Stuffed Nutella Chocolate Chunk", "Espresso Fudge", "Red Velvet White Chocolate Chip", "Bailey's Irish Cream Chocolate Chip", "Butter Toffee Sugar Cookie", "Reese's Peanut Butter Chip", "Apple Cinnamon", "Biscoff Crunch", "Sea Salt Browned Butter Toffee"
+          "Original Chocolate Chip", "Triple Chocolate Chip", "Chocolate Chip Caramel Pretzel", "Salted Brownie", "Chocolate Covered Strawberry", "Pumpkin Chocolate Chip", "Caramel Chocolate Chip", "Turtle", "Walnut White Chocolate Drizzled", "Cranberry White Chocolate Chip", "Peanut Butter Chocolate Chunk", "Chocolate Caramel", "Dark Chocolate Chip", "Shortbread Raspberry Thumbprints", "Chocolate Caramel Thumbprints", "White Chocolate Swirled Kiss Gingerbreads", "Nutella", "Salted Pecan Caramel"
         ]
       }
     },
@@ -61,8 +60,16 @@
       }
     },
     {
+      "name": "Cannoli Shooters",
+      "price": "$45.00",
+      "image": "",
+      "details": {
+        "general": ["Sold by the dozen"]
+      }
+    },
+    {
       "name": "Cake Shooters",
-      "price": "$50.00+",
+      "price": "$45.00",
       "image": "",
       "details": {
         "general": ["Sold by the dozen", "Cake + frosting of choice"]
@@ -70,18 +77,18 @@
     },
     {
       "name": "Full Cheesecake",
-      "price": "$75.00+",
+      "price": "$60.00+",
       "image": "full-cheesecake.png",
       "details": {
         "crust": ["Graham Cracker", "Oreo", "Gluten Free"],
         "flavors": [
-          "Traditional", "Oreo", "Chocolate Chip", "Pumpkin", "Chocolate", "Strawberry", "Raspberry swirl", "Caramel Swirl", "Lemon Swirl", "Cherry", "Blueberry", "Lemon Curd", "Biscoff Cookie", "Whipped Cream", "Carmel apple", "Whipped Chocolate Ganache"
+          "Traditional", "Oreo", "Chocolate Chip", "Pumpkin", "Chocolate", "Topping/Glaze with fruit of choice"
         ]
       }
     },
     {
       "name": "Mini Cheesecakes",
-      "price": "$50.00",
+      "price": "$45.00",
       "image": "min-cheesecakes.png",
       "details": {
         "general": ["Sold by the dozen"],
@@ -93,10 +100,18 @@
     },
     {
       "name": "Chocolate Covered Strawberries",
-      "price": "$45.00+",
+      "price": "$42.00",
       "image": "chocolate-strawberries.jpg",
       "details": {
         "general": ["Sold by the dozen", "Gluten Free"]
+      }
+    },
+    {
+      "name": "Mini Almond Cakes",
+      "price": "$40.00+",
+      "image": "",
+      "details": {
+        "general": ["Sold by the dozen"]
       }
     },
     {
@@ -118,7 +133,7 @@
     },
     {
       "name": "Mousse Cups",
-      "price": "$50.00",
+      "price": "$45.00",
       "image": "mousse-cups.png",
       "details": {
         "general": ["Sold by the dozen", "Gluten Free Available"],
@@ -127,7 +142,7 @@
     },
     {
       "name": "Pumpkin Squares",
-      "price": "$45.00",
+      "price": "$35.00",
       "image": "",
       "details": {
         "general": ["Sold by the dozen"]
@@ -135,13 +150,27 @@
     },
     {
       "name": "Biscotti",
-      "price": "$40.00+",
+      "price": "$35.00+",
       "image": "biscotti.jpg",
       "details": {
         "general": ["Sold by the dozen"],
         "flavors": [
           "Chocolate Chip - Half Dipped & Drizzled", "Butter Pecan - White Chocolate Drizzled", "Cranberry Walnut - White Chocolate Drizzled"
         ]
+      }
+    },
+    {
+      "name": "Pecan Pie",
+      "price": "$40.00",
+      "image": "",
+      "details": {}
+    },
+    {
+      "name": "Banana Bread Muffins",
+      "price": "$30.00",
+      "image": "",
+      "details": {
+        "general": ["Sold by the dozen"]
       }
     },
     {
@@ -154,7 +183,7 @@
     },
     {
       "name": "Gluten Free Brownies",
-      "price": "$45.00",
+      "price": "$40.00",
       "image": "gf-brownies.png",
       "details": {
         "general": ["Sold by the dozen"]
@@ -162,17 +191,16 @@
     },
     {
       "name": "Toffee “Crack”",
-      "price": "$40.00+",
+      "price": "$35.00",
       "image": "toffee-crack.png",
       "details": {}
     },
     {
       "name": "Red Velvet Cake Truffles",
-      "price": "$60.00+",
+      "price": "$50.00",
       "image": "",
       "details": {
         "general": ["Sold by the dozen"]
       }
     }
-  ]
-}
+]
