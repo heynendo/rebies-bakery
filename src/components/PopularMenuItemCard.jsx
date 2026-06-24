@@ -1,9 +1,13 @@
+import { Link } from "react-router-dom"
 import "../styles/menu-cards.css"
 import Badge from "../ui/Badge"
 
-export default function PopularMenuItemCard({item}){
+export default function PopularMenuItemCard({item, ...props}){
     return(
-        <div className="popular-menu-item">
+        <Link className="popular-menu-item" {...props}
+            to={`${item.name}`}
+            state={{ item }}
+        >
             <div className="container">
                 <h3>{item.name}</h3>
                 <div className="badges">
@@ -16,6 +20,6 @@ export default function PopularMenuItemCard({item}){
                 </div>
             </div>
             <img src={`/src/assets/menu/${item.image}`}/>
-        </div>
+        </Link>
     )
 }

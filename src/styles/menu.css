@@ -38,9 +38,11 @@
     gap: 15px;
     flex-wrap: wrap;
 }
-.column {
+.menu > .menu-items{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 25px;
 }
 .break{
     width: 100%;
@@ -51,14 +53,14 @@
     margin: 5px auto;
 }
 
-@media (min-width: 1000px) {
-    .menu > .container {
-        flex-direction: row; 
-        max-width: 1200px;   
-        justify-content: space-between;
-        align-items: flex-start;
+@media (max-width: 800px){
+    .menu{
+        padding: 0 15px;
     }
-    .column {
-        width: 48%;
+}
+
+@media (max-width: 400px){
+    .menu{
+        padding: 0 7.5px;
     }
 }

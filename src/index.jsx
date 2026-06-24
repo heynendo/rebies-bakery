@@ -12,6 +12,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import MotionWrapper from './functions/MotionWrapper'
 import NotFound from './pages/NotFound'
+import MenuItem from './pages/MenuItem'
 
 function AppRoutes(){
   const location = useLocation()
@@ -25,6 +26,7 @@ function AppRoutes(){
           <Route path="/contact" element={<MotionWrapper> <Contact /> </MotionWrapper>} />
           <Route path="/about" element={<MotionWrapper> <About /> </MotionWrapper>} />
           <Route path="/menu" element={<MotionWrapper> <Menu /> </MotionWrapper>} />
+          <Route path="/menu/:id" element={ <MenuItem />} />
           <Route path="*" element={<MotionWrapper> <NotFound /> </MotionWrapper>} />
         </Routes>
       </AnimatePresence>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import PageTitle from '../components/PageTitle'
-import MenuItem from '../components/MenuItem'
+import MenuCard from '../components/MenuCard'
 import menuData from '../data/menu.json'
 import '../styles/menu.css'
 import scrollToTop from '../functions/scrollToTop'
@@ -17,18 +17,24 @@ function Menu(){
     const [width, setWidth] = useState(window.innerWidth)
     const [userInput, setUserInput] = useState("")
 
-    const popularItems = menuData.filter(item => item.name === "Custom Cakes" ||
-                                                 item.name === "Cupcakes" ||
-                                                 item.name === "Gourmet Cookies"
+    const popularItems = menuData.filter(item => 
+        item.name === "Custom Cakes" ||
+        item.name === "Gourmet Cookies" ||
+        item.name === "Cupcakes"
     )
-    console.log(popularItems)
+
+    function ActiveMenuItems(menuData, userInput){
+        //apply filter using userInput and filter variables to show menu items
+        //add break line to every third menu item
+    }
+
 
     return(
         <div className="menu">
             <PageTitle content="Menu" />
             <h2>Popular Items</h2>
             <div className='popular-items'>
-                {popularItems.map(item => <PopularMenuItemCard item={item} />)}
+                {popularItems.map(item => <PopularMenuItemCard item={item} key={item.name}/>)}
             </div>
             <div className="search-container">
                 <SearchBar
@@ -40,6 +46,11 @@ function Menu(){
                         size={20}
                     />
                 </div>
+            </div>
+            <div className='menu-items'>
+                {menuData.map(item => 
+                    <MenuCard item={item} key={item.name}/>
+                )}
             </div>
         </div>
     )
