@@ -14,9 +14,9 @@ export default function MenuCard({item, ...props}){
         >
             <div className="container">
                 <h3>{item.name}</h3>
-                <Badge>{item.price}</Badge>
+                <Badge>${item.price.base}.00+</Badge>
             </div>
-            {item?.image && <img src={`/src/assets/menu/${item.image}`}/>}
+            {item?.images[0] && <img src={`/src/assets/menu/${item.images[0]}`}/>}
         </Link>
     )
 }

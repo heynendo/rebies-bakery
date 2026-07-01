@@ -16,6 +16,7 @@ import MenuItem from './pages/MenuItem'
 
 function AppRoutes(){
   const location = useLocation()
+  console.log(location.pathname)
 
   return(
     <>
@@ -30,15 +31,13 @@ function AppRoutes(){
           <Route path="*" element={<MotionWrapper> <NotFound /> </MotionWrapper>} />
         </Routes>
       </AnimatePresence>
-      <Footer />
+      {location.pathname.includes("/menu/") ? '' : <Footer />}
     </>
   )
 }
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
     <BrowserRouter>
       <AppRoutes />
     </BrowserRouter>
-  </StrictMode>,
 )

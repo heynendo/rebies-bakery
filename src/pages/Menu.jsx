@@ -7,14 +7,15 @@ import scrollToTop from '../functions/scrollToTop'
 import SearchBar from '../components/SearchBar'
 import FilterIcon from '../ui/icons/FilterIcon'
 import PopularMenuItemCard from '../components/PopularMenuItemCard'
+import getWindowWidth from '../functions/GetWindowWidth'
 
 function Menu(){
+
+    const width = getWindowWidth()
 
     useEffect(()=>{
         scrollToTop()
     },[])
-
-    const [width, setWidth] = useState(window.innerWidth)
     const [userInput, setUserInput] = useState("")
 
     const popularItems = menuData.filter(item => 
@@ -23,11 +24,14 @@ function Menu(){
         item.name === "Cupcakes"
     )
 
-    function ActiveMenuItems(menuData, userInput){
-        //apply filter using userInput and filter variables to show menu items
-        //add break line to every third menu item
-    }
-
+    let activeMenuItems = menuData
+        .filter(item => item.name.includes(userInput) || 
+                        item.desc.includes(userInput)
+                )
+        .map((item, index) => 
+            (width < 980 ? (index % 2 === 1) : (index % 3 === 2)) ? 
+            <div className='break'/> : <MenuCard item={item} key={item.name}/>
+        )
 
     return(
         <div className="menu">
@@ -48,9 +52,7 @@ function Menu(){
                 </div>
             </div>
             <div className='menu-items'>
-                {menuData.map(item => 
-                    <MenuCard item={item} key={item.name}/>
-                )}
+                {activeMenuItems}
             </div>
         </div>
     )

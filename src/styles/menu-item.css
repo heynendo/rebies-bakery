@@ -1,3 +1,127 @@
 .menu-item{
-    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 50px;
+    margin-top: var(--header-margin);
+    width: 100%;
+    max-width: 1200px;
+    justify-self: center;
+    align-items: center;
+    margin-bottom: 175px;
+}
+.menu-item h3{
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+.menu-item > .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 120px;
+    width: 100%;
+}
+.menu-item > .heading > h2{
+    color: black;
+}
+.menu-item .image-gallery{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+.menu-item .image-gallery > .selector{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.menu-item .image-gallery > .selector > div{
+    border-radius: 10px;
+    height: 105px;
+    width: 105px;
+    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.menu-item .image-gallery > .selector img{
+    height: 100%;
+}
+.menu-item .image-gallery > .main-img{
+    background-color: white;
+    aspect-ratio: 8/6;
+    border-radius: 25px;
+    padding: 25px;
+    height: 400px;
+    justify-items: center;
+}
+.menu-item .image-gallery > .main-img > img{
+    height: 100%;
+}
+.menu-item > .desc{
+    display: block;
+    justify-self: center;
+    max-width: 900px;
+    line-height: 100%;
+    overflow: hidden;
+    padding: 2px 0;
+}
+.menu-item > .break{
+    max-width: 1200px;
+}
+.menu-item > .more{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: start;
+}
+.menu-item .category{
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: start;
+}
+.menu-item .category > .options{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+.menu-item .category > .options > .badge:nth-child(odd){
+    border: solid 2px var(--color-primary);
+    color: var(--color-primary);
+    padding: 4px 16px;
+}
+.menu-item .category > .options > .badge:nth-child(even){
+    border: solid 2px var(--color-secondary);
+    color: var(--color-secondary);
+    padding: 4px 16px;
+}
+.menu-item .pricing{
+    background-color: white;
+    min-height: 100px;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+}
+.menu-item .pricing > .left{
+    display: flex;
+    gap: 25px;
+}
+
+@media (max-width: 600px){
+    .menu-item{
+        padding: 0 10px;
+    }
 }

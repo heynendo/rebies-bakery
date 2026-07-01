@@ -15,11 +15,11 @@ export default function PopularMenuItemCard({item, ...props}){
                         our most popular item!
                     </Badge>
                     <Badge color="black">
-                        {item.price}
+                        price
                     </Badge>
                 </div>
             </div>
-            <img src={`/src/assets/menu/${item.image}`}/>
+            <img src={`/src/assets/menu/${item.images[0]}`}/>
         </Link>
     )
 }
