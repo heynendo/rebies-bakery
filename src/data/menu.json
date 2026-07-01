@@ -28,7 +28,7 @@
     {
       "name": "Cupcakes",
       "images": ["cupcake-1.jpeg", "cupcake-2.jpg"],
-      "desc": "Add more details soon",
+      "desc": "Beautiful cupcakes available in a wide variety of flavors and frostings, perfect for any occasion.",
       "details": {
         "flavors": ["Double Chocolate", "Vanilla", "Funfetti", "Pumpkin", "Lemon", "Lemon Blueberry", "Red Velvet", "Oreo", "Pistachio", "Cookies & Cream", "Chocolate Chip", "Carrot Cake", "Churro", "Peanut Butter", "Strawberry"],
         "frostings": ["Vanilla", "Almond", "Double Chocolate", "Oreo", "Lemon", "Strawberry", "Raspberry", "Blueberry", "Salted Caramel", "Whipped Cream", "Cream Cheese", "Cinnamon Cream Cheese", "Chocolate Cream Cheese", "Peanut Butter", "Coconut"]
@@ -41,7 +41,7 @@
     {
       "name": "Chocolate Ganache",
       "images": [],
-      "desc": "Add more details soon | Flourless “Flat Cake” | Gluten Free",
+      "desc": "A rich, flourless chocolate cake with a smooth ganache finish. This gluten-free \"flat cake\" is a decadent treat for chocolate lovers.",
       "details": {},
       "price":{
         "base": 35.00,
@@ -51,7 +51,7 @@
     {
       "name": "Lemon Squares",
       "images": ["lemon-squares-1.jpeg"],
-      "desc": "Add more details soon | Sold by the dozen",
+      "desc": "Sweet and tangy lemon squares with a buttery crust. This item is sold by the dozen.",
       "details": {},
       "price":{
         "base": 35.00,
@@ -61,7 +61,7 @@
     {
       "name": "Gourmet Cookies",
       "images": ["cookies-1.jpeg", "cookies-2.jpeg", "cookies-3.jpeg"],
-      "desc": "Add more details soon | Sold by the dozen",
+      "desc": "A delicious assortment of gourmet cookie flavors, from classic chocolate chip to specialty options like salted pecan caramel and Nutella. This item is sold by the dozen.",
       "details": {
         "flavors": [
           "Original Chocolate Chip", "Triple Chocolate Chip", "Chocolate Chip Caramel Pretzel", "Salted Brownie", "Chocolate Covered Strawberry", "Pumpkin Chocolate Chip", "Caramel Chocolate Chip", "Turtle", "Walnut White Chocolate Drizzled", "Cranberry White Chocolate Chip", "Peanut Butter Chocolate Chunk", "Chocolate Caramel", "Dark Chocolate Chip", "Shortbread Raspberry Thumbprints", "Chocolate Caramel Thumbprints", "White Chocolate Swirled Kiss Gingerbreads", "Nutella", "Salted Pecan Caramel"
@@ -75,7 +75,7 @@
     {
       "name": "Bundt Cakes",
       "images": ["bundt-cake-1.png"],
-      "desc": "Add more details soon",
+      "desc": "Available in a variety of flavors, finished with a glaze topping.",
       "details": {
         "flavors": ["Pistachio", "Chocolate", "Vanilla", "Limoncello", "Red Velvet", "Whiskey Cake", "Glaze Topping"]
       },
@@ -87,7 +87,7 @@
     {
       "name": "Cannoli Shooters",
       "images": [],
-      "desc": "Add more details soon | Sold by the dozen",
+      "desc": "A fun, bite-sized twist on classic cannoli. This item is sold by the dozen.",
       "details": {},
       "price":{
         "base": 45.00,
@@ -97,7 +97,7 @@
     {
       "name": "Cake Shooters",
       "images": [],
-      "desc": "Add more details soon | Sold by the dozen | Cake + frosting of choice",
+      "desc": "Layers of cake and your choice of frosting in a convenient shooter-sized treat. This item is sold by the dozen.",
       "details": {},
       "price":{
         "base": 45.00,
@@ -107,7 +107,7 @@
     {
       "name": "Full Cheesecake",
       "images": ["full-cheesecake-1.png"],
-      "desc": "Add more details soon",
+      "desc": "Rich and creamy cheesecake available in a variety of flavors and crusts, with optional fruit toppings and glazes.",
       "details": {
         "crust": ["Graham Cracker", "Oreo", "Gluten Free"],
         "flavors": ["Traditional", "Oreo", "Chocolate Chip", "Pumpkin", "Chocolate", "Topping/Glaze with fruit of choice"]
@@ -120,7 +120,7 @@
     {
       "name": "Mini Cheesecakes",
       "images": ["mini-cheesecakes-1.png"],
-      "desc": "Add more details soon | Sold by the dozen",
+      "desc": "Bite-sized cheesecakes available in a variety of flavors and crust options. This item is sold by the dozen.",
       "details": {
         "flavors": ["Strawberry", "Blackberry", "Blueberry", "Raspberry", "Cherry", "Lemon Curd", "Caramel", "Chocolate Chip", "Whipped Chocolate Ganache", "Whipped Cream Frosting"],
         "crust": ["Graham Cracker", "Oreo"]
@@ -133,7 +133,7 @@
     {
       "name": "Chocolate Covered Strawberries",
       "images": ["chocolate-strawberries-1.jpeg", "chocolate-strawberries-2.jpeg"],
-      "desc": "Add more details soon | Sold by the dozen | Gluten Free",
+      "desc": "Fresh strawberries dipped in smooth chocolate, a gluten-free treat perfect for any celebration. This item is sold by the dozen.",
       "details": {},
       "price":{
         "base": 42.00,
@@ -143,7 +143,7 @@
     {
       "name": "Mini Almond Cakes",
       "images": [],
-      "desc": "Add more details soon | Sold by the dozen",
+      "desc": "Delicate, almond-flavored mini cakes. This item is sold by the dozen.",
       "details": {},
       "price":{
         "base": 40.00,
@@ -153,7 +153,7 @@
     {
       "name": "Cannoli",
       "images": ["cannoli-1.jpeg"],
-      "desc": "Add more details soon | Sold by the dozen",
+      "desc": "Classic cannoli filled with chocolate chip cream and topped with crumbled pistachio. This item is sold by the dozen.",
       "details": {
         "flavors": ["Chocolate Chip with Pistachio Crumbled Topping"]
       },
@@ -165,7 +165,7 @@
     {
       "name": "Chocolate Fudge",
       "images": [],
-      "desc": "Add more details soon | Sold by the dozen",
+      "desc": "Rich, creamy chocolate fudge made in small batches. This item is sold by the dozen.",
       "details": {},
       "price":{
         "base": 45.00,
@@ -175,7 +175,7 @@
     {
       "name": "Mousse Cups",
       "images": ["mousse-cups-1.png", "mousse-cups-2.png", "mousse-cups-3.png"],
-      "desc": "Add more details soon | Sold by the dozen | Gluten Free Available",
+      "desc": "Light and airy mousse available in a variety of flavors, with gluten-free options available. This item is sold by the dozen.",
       "details": {
         "flavors": ["Strawberry", "Raspberry", "Lemon Cheesecake", "Blueberry", "Chocolate", "Pumpkin"]
       },
@@ -187,7 +187,7 @@
     {
       "name": "Pumpkin Squares",
       "images": [],
-      "desc": "Add more details soon | Sold by the dozen",
+      "desc": "Soft, spiced pumpkin squares perfect for fall gatherings. This item is sold by the dozen.",
       "details": {},
       "price":{
         "base": 35.00,
@@ -197,7 +197,7 @@
     {
       "name": "Biscotti",
       "images": ["biscotti-1.jpg"],
-      "desc": "Add more details soon | Sold by the dozen",
+      "desc": "Crunchy biscotti available in a variety of flavors, dipped and drizzled with chocolate. This item is sold by the dozen.",
       "details": {
         "flavors": [ "Chocolate Chip - Half Dipped & Drizzled", "Butter Pecan - White Chocolate Drizzled", "Cranberry Walnut - White Chocolate Drizzled"]
       },
@@ -209,7 +209,7 @@
     {
       "name": "Pecan Pie",
       "images": [],
-      "desc": "Add more details soon",
+      "desc": "A classic pecan pie with a buttery crust and rich, sweet filling.",
       "details": {},
       "price":{
         "base": 40.00,
@@ -219,7 +219,7 @@
     {
       "name": "Banana Bread Muffins",
       "images": [],
-      "desc": "Add more details soon | Sold by the dozen",
+      "desc": "Perfect to add to your breakfast, or enjoy as a snack. This item is sold by the dozen.",
       "details": {},
       "price":{
         "base": 30.00,
@@ -229,7 +229,7 @@
     {
       "name": "Chocolate Covered Pretzel Rods",
       "images": ["pretzel-rods-1.jpg", "pretzel-rods-2.jpeg"],
-      "desc": "Add more details soon | Sold by the dozen",
+      "desc": "Crunchy pretzel rods dipped in smooth chocolate. This item is sold by the dozen.",
       "details": {},
       "price":{
         "base": 35.00,
@@ -239,7 +239,7 @@
     {
       "name": "Gluten Free Brownies",
       "images": ["gf-brownies-1.png"],
-      "desc": "Add more details soon | Sold by the dozen",
+      "desc": "Rich, fudgy brownies made without gluten. This item is sold by the dozen.",
       "details": {},
       "price":{
         "base": 40.00,
@@ -247,9 +247,9 @@
       }
     },
     {
-      "name": "Toffee “Crack”",
+      "name": "Toffee \u201cCrack\u201d",
       "images": ["toffee-crack-1.png"],
-      "desc": "Add more details soon",
+      "desc": "A crunchy, buttery toffee treat that's hard to stop eating.",
       "details": {},
       "price":{
         "base": 35.00,
@@ -259,7 +259,7 @@
     {
       "name": "Red Velvet Cake Truffles",
       "images": [],
-      "desc": "Add more details soon | Sold by the dozen",
+      "desc": "Bite-sized red velvet cake truffles, rich and decadent. This item is sold by the dozen.",
       "details": {},
       "price":{
         "base": 50.00,
