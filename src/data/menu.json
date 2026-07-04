@@ -3,26 +3,59 @@
       "name": "Custom Cakes",
       "images": ["cake-1.jpeg", "cake-2.jpeg", "cake-3.jpeg"],
       "desc": "Each cake is made with real, high-quality ingredients and crafted to your specifications. Popular cake flavors and frosting options are listed below, but every cake can be customized to create the perfect cake for your celebration.",
-      "details":{
-        "flavors":["Double Chocolate", "Vanilla", "Funfetti", "Pumpkin"],
-        "frostings":["Vanilla", "Almond", "Double Chocolate"]
+      "details": {
+        "flavors": [
+          "Double Chocolate",
+          "Vanilla",
+          "Funfetti",
+          "Pumpkin"
+        ],
+        "frostings": [
+          "Vanilla",
+          "Almond",
+          "Double Chocolate"
+        ]
       },
-      "price":{
-        "base": 80.00,
-        "variables":{
-          "size (inches)":{
-            "values": [6,8],
-            "scale": 0.25
+      "price": {
+        "base": 80,
+        "options": [
+          {
+            "label": "Size (inches)",
+            "key": "size",
+            "values": [
+              {
+                "name": "6",
+                "modifier": 0
+              },
+              {
+                "name": "8",
+                "modifier": 20
+              }
+            ]
           },
-          "tiers":{
-            "values": [1,2,3,4],
-            "scale": 0.25
-          },
-          "total":{
-            "values": [1,2,3,4,5,6,7,8,9,10],
-            "scale": 1 
+          {
+            "label": "Tiers",
+            "key": "tiers",
+            "values": [
+              {
+                "name": "1",
+                "modifier": 0
+              },
+              {
+                "name": "2",
+                "modifier": 40
+              },
+              {
+                "name": "3",
+                "modifier": 80
+              },
+              {
+                "name": "4",
+                "modifier": 120
+              }
+            ]
           }
-        }
+        ]
       }
     },
     {
@@ -30,12 +63,67 @@
       "images": ["cupcake-1.jpeg", "cupcake-2.jpg"],
       "desc": "Beautiful cupcakes available in a wide variety of flavors and frostings, perfect for any occasion.",
       "details": {
-        "flavors": ["Double Chocolate", "Vanilla", "Funfetti", "Pumpkin", "Lemon", "Lemon Blueberry", "Red Velvet", "Oreo", "Pistachio", "Cookies & Cream", "Chocolate Chip", "Carrot Cake", "Churro", "Peanut Butter", "Strawberry"],
-        "frostings": ["Vanilla", "Almond", "Double Chocolate", "Oreo", "Lemon", "Strawberry", "Raspberry", "Blueberry", "Salted Caramel", "Whipped Cream", "Cream Cheese", "Cinnamon Cream Cheese", "Chocolate Cream Cheese", "Peanut Butter", "Coconut"]
+        "flavors": [
+          "Double Chocolate",
+          "Vanilla",
+          "Funfetti",
+          "Pumpkin",
+          "Lemon",
+          "Lemon Blueberry",
+          "Red Velvet",
+          "Oreo",
+          "Pistachio",
+          "Cookies & Cream",
+          "Chocolate Chip",
+          "Carrot Cake",
+          "Churro",
+          "Peanut Butter",
+          "Strawberry"
+        ],
+        "frostings": [
+          "Vanilla",
+          "Almond",
+          "Double Chocolate",
+          "Oreo",
+          "Lemon",
+          "Strawberry",
+          "Raspberry",
+          "Blueberry",
+          "Salted Caramel",
+          "Whipped Cream",
+          "Cream Cheese",
+          "Cinnamon Cream Cheese",
+          "Chocolate Cream Cheese",
+          "Peanut Butter",
+          "Coconut"
+        ]
       },
-      "price":{
-        "base": 38.00,
-        "variables":{}
+      "price": {
+        "base": 38,
+        "options": [
+          {
+            "label": "Quantity",
+            "key": "quantity",
+            "values": [
+              {
+                "name": "1 dozen",
+                "modifier": 0
+              },
+              {
+                "name": "2 dozen",
+                "modifier": 38
+              },
+              {
+                "name": "3 dozen",
+                "modifier": 76
+              },
+              {
+                "name": "4 dozen",
+                "modifier": 114
+              }
+            ]
+          }
+        ]
       }
     },
     {
@@ -45,7 +133,7 @@
       "details": {},
       "price":{
         "base": 35.00,
-        "variables":{}
+        "options": []
       }
     },
     {
@@ -55,21 +143,65 @@
       "details": {},
       "price":{
         "base": 35.00,
-        "variables":{}
+        "options": []
       }
     },
     {
       "name": "Gourmet Cookies",
-      "images": ["cookies-1.jpeg", "cookies-2.jpeg", "cookies-3.jpeg"],
+      "images": [
+        "cookies-1.jpeg",
+        "cookies-2.jpeg",
+        "cookies-3.jpeg"
+      ],
       "desc": "A delicious assortment of gourmet cookie flavors, from classic chocolate chip to specialty options like salted pecan caramel and Nutella. This item is sold by the dozen.",
       "details": {
         "flavors": [
-          "Original Chocolate Chip", "Triple Chocolate Chip", "Chocolate Chip Caramel Pretzel", "Salted Brownie", "Chocolate Covered Strawberry", "Pumpkin Chocolate Chip", "Caramel Chocolate Chip", "Turtle", "Walnut White Chocolate Drizzled", "Cranberry White Chocolate Chip", "Peanut Butter Chocolate Chunk", "Chocolate Caramel", "Dark Chocolate Chip", "Shortbread Raspberry Thumbprints", "Chocolate Caramel Thumbprints", "White Chocolate Swirled Kiss Gingerbreads", "Nutella", "Salted Pecan Caramel"
+          "Original Chocolate Chip",
+          "Triple Chocolate Chip",
+          "Chocolate Chip Caramel Pretzel",
+          "Salted Brownie",
+          "Chocolate Covered Strawberry",
+          "Pumpkin Chocolate Chip",
+          "Caramel Chocolate Chip",
+          "Turtle",
+          "Walnut White Chocolate Drizzled",
+          "Cranberry White Chocolate Chip",
+          "Peanut Butter Chocolate Chunk",
+          "Chocolate Caramel",
+          "Dark Chocolate Chip",
+          "Shortbread Raspberry Thumbprints",
+          "Chocolate Caramel Thumbprints",
+          "White Chocolate Swirled Kiss Gingerbreads",
+          "Nutella",
+          "Salted Pecan Caramel"
         ]
       },
-      "price":{
-        "base": 36.00,
-        "variables":{}
+      "price": {
+        "base": 36,
+        "options": [
+          {
+            "label": "Quantity",
+            "key": "quantity",
+            "values": [
+              {
+                "name": "1 dozen",
+                "modifier": 0
+              },
+              {
+                "name": "2 dozen",
+                "modifier": 36
+              },
+              {
+                "name": "3 dozen",
+                "modifier": 72
+              },
+              {
+                "name": "4 dozen",
+                "modifier": 108
+              }
+            ]
+          }
+        ]
       }
     },
     {
@@ -81,7 +213,7 @@
       },
       "price":{
         "base": 40.00,
-        "variables":{}
+        "options": []
       }
     },
     {
@@ -91,7 +223,7 @@
       "details": {},
       "price":{
         "base": 45.00,
-        "variables":{}
+        "options": []
       }
     },
     {
@@ -101,7 +233,7 @@
       "details": {},
       "price":{
         "base": 45.00,
-        "variables":{}
+        "options": []
       }
     },
     {
@@ -114,7 +246,7 @@
       },
       "price":{
         "base": 60.00,
-        "variables":{}
+        "options": []
       }
     },
     {
@@ -127,7 +259,7 @@
       },
       "price":{
         "base": 45.00,
-        "variables":{}
+        "options": []
       }
     },
     {
@@ -137,7 +269,7 @@
       "details": {},
       "price":{
         "base": 42.00,
-        "variables":{}
+        "options": []
       }
     },
     {
@@ -147,7 +279,7 @@
       "details": {},
       "price":{
         "base": 40.00,
-        "variables":{}
+        "options": []
       }
     },
     {
@@ -159,7 +291,7 @@
       },
       "price":{
         "base": 35.00,
-        "variables":{}
+        "options": []
       }
     },
     {
@@ -169,19 +301,19 @@
       "details": {},
       "price":{
         "base": 45.00,
-        "variables":{}
+        "options": []
       }
     },
     {
       "name": "Mousse Cups",
-      "images": ["mousse-cups-1.png", "mousse-cups-2.png", "mousse-cups-3.png"],
+      "images": ["mousse-cups-1.jpeg", "mousse-cups-2.jpg", "mousse-cups-3.jpeg"],
       "desc": "Light and airy mousse available in a variety of flavors, with gluten-free options available. This item is sold by the dozen.",
       "details": {
         "flavors": ["Strawberry", "Raspberry", "Lemon Cheesecake", "Blueberry", "Chocolate", "Pumpkin"]
       },
       "price":{
         "base": 45.00,
-        "variables":{}
+        "options": []
       }
     },
     {
@@ -191,7 +323,7 @@
       "details": {},
       "price":{
         "base": 35.00,
-        "variables":{}
+        "options": []
       }
     },
     {
@@ -203,7 +335,7 @@
       },
       "price":{
         "base": 35.00,
-        "variables":{}
+        "options": []
       }
     },
     {
@@ -213,7 +345,7 @@
       "details": {},
       "price":{
         "base": 40.00,
-        "variables":{}
+        "options": []
       }
     },
     {
@@ -223,7 +355,7 @@
       "details": {},
       "price":{
         "base": 30.00,
-        "variables":{}
+        "options": []
       }
     },
     {
@@ -233,7 +365,7 @@
       "details": {},
       "price":{
         "base": 35.00,
-        "variables":{}
+        "options": []
       }
     },
     {
@@ -243,7 +375,7 @@
       "details": {},
       "price":{
         "base": 40.00,
-        "variables":{}
+        "options": []
       }
     },
     {
@@ -253,7 +385,7 @@
       "details": {},
       "price":{
         "base": 35.00,
-        "variables":{}
+        "options": []
       }
     },
     {
@@ -263,7 +395,7 @@
       "details": {},
       "price":{
         "base": 50.00,
-        "variables":{}
+        "options": []
       }
     }
 ]
