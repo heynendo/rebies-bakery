@@ -42,7 +42,7 @@ export default function PopularMenuItemCard({item, ...props}){
                     </Badge>
                 </div>
             </div>
-            <img src={`/src/assets/menu/${item.images[0]}`}/>
+            <img src={`/images/menu/${item.images[0]}`}/>
         </Link>
     )
 }

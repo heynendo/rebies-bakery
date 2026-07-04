@@ -61,12 +61,12 @@ export default function MenuItem() {
                             <div key={image}
                                 onClick={() => setCurrentImage(image)}
                             >
-                                <img src={`/src/assets/menu/${image}`} />
+                                <img src={`/images/menu/${image}`}/>
                             </div>
                         ))}
                     </div>
                     <div className="main-img">
-                        <img src={`/src/assets/menu/${currentImage}`} />
+                        <img src={`/images/menu/${currentImage}`}/>
                     </div>
                 </div>
                 :
