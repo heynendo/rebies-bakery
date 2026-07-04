@@ -29,8 +29,13 @@ function Menu(){
                         item.desc.includes(userInput)
                 )
         .map((item, index) => 
-            (width < 980 ? (index % 2 === 1) : (index % 3 === 2)) ? 
-            <div className='break'/> : <MenuCard item={item} key={item.name}/>
+            (width < 980 ? (true) : (index % 2 === 0)) ? 
+            <>
+            <div className='break'/>
+            <MenuCard item={item} key={item.name}/>
+            </> 
+            : 
+            <MenuCard item={item} key={item.name}/>
         )
 
     return(

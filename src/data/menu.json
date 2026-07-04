@@ -60,7 +60,7 @@
     },
     {
       "name": "Cupcakes",
-      "images": ["cupcake-1.jpeg", "cupcake-2.jpg"],
+      "images": ["cupcake-1.jpeg", "cupcake-2.JPG"],
       "desc": "Beautiful cupcakes available in a wide variety of flavors and frostings, perfect for any occasion.",
       "details": {
         "flavors": [
@@ -206,7 +206,7 @@
     },
     {
       "name": "Bundt Cakes",
-      "images": ["bundt-cake-1.png"],
+      "images": ["bundt-cake-1.jpg"],
       "desc": "Available in a variety of flavors, finished with a glaze topping.",
       "details": {
         "flavors": ["Pistachio", "Chocolate", "Vanilla", "Limoncello", "Red Velvet", "Whiskey Cake", "Glaze Topping"]
