@@ -38,7 +38,7 @@ export default function PopularMenuItemCard({item, ...props}){
                         {specialTag}
                     </Badge>
                     <Badge color="black">
-                        ${item.price.base}.00+
+                        ${item.price}.00+
                     </Badge>
                 </div>
             </div>

@@ -8,35 +8,48 @@ import SearchBar from '../components/SearchBar'
 import FilterIcon from '../ui/icons/FilterIcon'
 import PopularMenuItemCard from '../components/PopularMenuItemCard'
 import getWindowWidth from '../functions/GetWindowWidth'
+import { motion, AnimatePresence } from 'motion/react'
+import '../styles/filter-options.css'
+
+const filterChoices = 
+[
+    "Price Low to High",
+    "Price High to Low",
+    "Alphabetical: A to Z",
+    "Alphabetical: Z to A"
+]
 
 function Menu(){
 
     const width = getWindowWidth()
+    const [showFilters, setShowFilters] = useState(false)
+    const [userInput, setUserInput] = useState("")
+    const [filterChoice, setFilterChoice] = useState("Alphabetical: A to Z")
 
     useEffect(()=>{
         scrollToTop()
     },[])
-    const [userInput, setUserInput] = useState("")
 
-    const popularItems = menuData.filter(item => 
-        item.name === "Custom Cakes" ||
-        item.name === "Gourmet Cookies" ||
-        item.name === "Cupcakes"
-    )
-
-    let activeMenuItems = menuData
-        .filter(item => item.name.includes(userInput) || 
-                        item.desc.includes(userInput)
-                )
-        .map((item, index) => 
-            (width < 980 ? (true) : (index % 2 === 0)) ? 
-            <>
-            <div className='break'/>
-            <MenuCard item={item} key={item.name}/>
-            </> 
-            : 
-            <MenuCard item={item} key={item.name}/>
+    const popularItems = menuData
+        .filter(item => 
+            item.name === "Custom Cakes" ||
+            item.name === "Gourmet Cookies" ||
+            item.name === "Cupcakes"
         )
+
+    const activeMenuItems = menuData
+        .filter(item => {
+            const query = userInput.toLowerCase()
+            return item.name.toLowerCase().includes(query) || 
+                   item.desc.toLowerCase().includes(query)
+        })
+        .sort((a, b) => {
+            if(filterChoice === "Alphabetical: A to Z") return a.name.localeCompare(b.name)
+            else if(filterChoice === "Alphabetical: Z to A") return b.name.localeCompare(a.name)
+            else if(filterChoice === "Price High to Low") return b.price - a.price
+            else return a.price - b.price
+        })
+        .map((item, index) => <MenuCard item={item} key={item.name} />)
 
     return(
         <div className="menu">
@@ -50,14 +63,43 @@ function Menu(){
                     userInput={userInput}
                     setUserInput={setUserInput}
                 />
-                <div className="filter-toggle">
+                <div className="filter-toggle"
+                    onClick={() => setShowFilters(x => !x)}
+                >
                     <FilterIcon
                         size={20}
                     />
                 </div>
+                <AnimatePresence>
+                {showFilters &&
+                <>
+                <div className='filter-overlay' onClick={() => setShowFilters(false)} />
+                <div className='filter-options'>
+                    <div className='head' />
+                    <div className='container'>
+                        <span className='title'>Sort</span>
+                        {filterChoices.map(x =>
+                            <>
+                            <div className='option'
+                                onClick={() => setFilterChoice(x)}
+                            >
+                                <div className={`indicator ${x === filterChoice ? 'selected' : ''}`} />
+                                {x}
+                            </div>
+                            <div className='break' />
+                            </>
+                        )}
+                    </div>
+                </div>
+                </>
+                }
+                </AnimatePresence>
             </div>
             <div className='menu-items'>
-                {activeMenuItems}
+                <div className='break'/>
+                <AnimatePresence mode="popLayout">
+                    {activeMenuItems}
+                </AnimatePresence>
             </div>
         </div>
     )

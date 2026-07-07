@@ -13,9 +13,11 @@
     margin-bottom: 25px;
 }
 .menu > .search-container{
+    position: relative;
     display: flex;
     align-content: stretch;
     gap: 25px;
+    overflow: visible;
 }
 .menu > .search-container > .filter-toggle{
     width: 45px;
@@ -43,6 +45,7 @@
     flex-wrap: wrap;
     row-gap: 10px;
     column-gap: 25px;
+    overflow: hidden;
 }
 .break{
     width: 100%;

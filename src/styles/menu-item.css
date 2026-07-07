@@ -21,6 +21,10 @@
     align-items: center;
     min-height: 120px;
     width: 100%;
+    gap: 25px;
+}
+.menu-item > .heading > a{
+    flex-shrink: 0;
 }
 .menu-item > .heading > h2{
     color: black;
@@ -36,6 +40,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    flex-shrink: 0;
 }
 .menu-item .image-gallery > .selector > div{
     border-radius: 10px;
@@ -47,15 +52,21 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+.menu-item .image-gallery > .selector > div:hover{
+    opacity: 1;   
 }
 .menu-item .image-gallery > .selector img{
     height: 100%;
+    flex-shrink: 1;
 }
 .menu-item .image-gallery > .main-img{
     background-color: white;
     aspect-ratio: 8/6;
     border-radius: 25px;
-    padding: 25px;
+    padding: 25px 0;
     height: 400px;
     justify-items: center;
 }
@@ -115,14 +126,48 @@
     padding: 10px 100px;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
 }
-.menu-item .pricing > .left{
-    display: flex;
-    gap: 25px;
-}
-
-
 @media (max-width: 600px){
     .menu-item{
         padding: 0 10px;
+    }
+    .menu-item > .heading{
+        padding: 0 10px;
+    }
+    .menu-item .image-gallery{
+        gap: 10px;
+    }
+    .menu-item .image-gallery > .selector{
+        gap: 10px;
+    }
+    .menu-item .image-gallery > .selector > div{
+        height: 65px;
+        width: 65px;
+    }
+    .menu-item .image-gallery > .main-img{
+        height: 275px;
+        padding: 10px;
+        align-content: center;
+    }
+    .menu-item .image-gallery > .main-img > img{
+        height: 85%;
+        margin: auto;
+    }
+    .menu-item h3{
+        font-size: 1.15rem;
+    }
+    .menu-item .category > .options{
+        gap: 5px;
+        padding: 5px;
+    }
+    .menu-item .category > .options > .badge:nth-child(odd){
+        font-size: 0.9rem;
+        padding: 2px 12px;
+    }
+    .menu-item .category > .options > .badge:nth-child(even){
+        font-size: 0.9rem;
+        padding: 2px 12px;
+    }
+    .menu-item .pricing{
+        padding: 25px;
     }
 }

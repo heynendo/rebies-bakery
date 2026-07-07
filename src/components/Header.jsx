@@ -35,6 +35,7 @@ function Header() {
     const location = useLocation()
     let currentPage = location.pathname.replace("/", "")
     if (currentPage === '') currentPage = 'home'
+    if (currentPage.includes("menu")) currentPage = 'menu'
 
     useEffect(() => {
         function handleResize() {
