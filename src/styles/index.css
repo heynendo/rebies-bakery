@@ -25,7 +25,14 @@
 }
 body{
   font-family: "Century Gothic","Apple Gothic",sans-serif;
-  background-color: #eeeeee;
+  background-color: #f7f7f7;
+}
+h2{
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 105%;
+  color: var(--color-primary);
+  overflow: hidden;
 }
 .body-title{
   font-weight: 700;
@@ -57,7 +64,7 @@ body{
     background-color: var(--color-primary);
 }
 .not-found{
-  min-height: 100vh;
+  min-height: 70vh;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -81,5 +88,8 @@ body{
     font-weight: 700;
     font-size: 0.9em;
     margin: 25px auto;
+  }
+  h2{
+    font-size: 1.65rem;
   }
 }

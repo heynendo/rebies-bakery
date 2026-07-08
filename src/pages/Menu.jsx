@@ -1,43 +1,109 @@
 import { useState, useEffect } from 'react'
 import PageTitle from '../components/PageTitle'
-import MenuItem from '../components/MenuItem'
+import MenuCard from '../components/MenuCard'
 import menuData from '../data/menu.json'
 import '../styles/menu.css'
 import scrollToTop from '../functions/scrollToTop'
+import SearchBar from '../components/SearchBar'
+import FilterIcon from '../ui/icons/FilterIcon'
+import PopularMenuItemCard from '../components/PopularMenuItemCard'
+import getWindowWidth from '../functions/GetWindowWidth'
+import { motion, AnimatePresence } from 'motion/react'
+import '../styles/filter-options.css'
+
+const filterChoices = 
+[
+    "Price Low to High",
+    "Price High to Low",
+    "Alphabetical: A to Z",
+    "Alphabetical: Z to A"
+]
 
 function Menu(){
+
+    const width = getWindowWidth()
+    const [showFilters, setShowFilters] = useState(false)
+    const [userInput, setUserInput] = useState("")
+    const [filterChoice, setFilterChoice] = useState("Alphabetical: A to Z")
 
     useEffect(()=>{
         scrollToTop()
     },[])
 
-    const [width, setWidth] = useState(window.innerWidth)
+    const popularItems = menuData
+        .filter(item => 
+            item.name === "Custom Cakes" ||
+            item.name === "Gourmet Cookies" ||
+            item.name === "Cupcakes"
+        )
 
-    useEffect(() => {
-        const handleResize = () => setWidth(window.innerWidth)
-
-        window.addEventListener("resize", handleResize)
-        return () => window.removeEventListener("resize", handleResize)
-    }, [])
-
-    const half = Math.ceil(menuData.menu.length / 2)
-    const firstHalf = menuData.menu.slice(0, half)
-    const secondHalf = menuData.menu.slice(half)
-
+    const activeMenuItems = menuData
+        .filter(item => {
+            const query = userInput.toLowerCase()
+            return item.name.toLowerCase().includes(query) || 
+                   item.desc.toLowerCase().includes(query)
+        })
+        .sort((a, b) => {
+            if(filterChoice === "Alphabetical: A to Z") return a.name.localeCompare(b.name)
+            else if(filterChoice === "Alphabetical: Z to A") return b.name.localeCompare(a.name)
+            else if(filterChoice === "Price High to Low") return b.price - a.price
+            else return a.price - b.price
+        })
+        .map((item, index) => <MenuCard item={item} key={item.name} />)
 
     return(
         <div className="menu">
             <PageTitle content="Menu" />
-            <span>More menu updates coming soon, stay tuned!</span>
-            <div className='container'>
-                <div className='column'>
-                    <div className='break'/>
-                    {firstHalf.map(item => <MenuItem item={item} key={item.name}/>)}
+            <h2>Popular Items</h2>
+            <div className='popular-items'>
+                {popularItems.map(item => <PopularMenuItemCard item={item} key={item.name}/>)}
+            </div>
+            <div className='break'/>
+            <div className="search-container">
+                <SearchBar
+                    userInput={userInput}
+                    setUserInput={setUserInput}
+                />
+                <div className="filter-toggle"
+                    onClick={() => setShowFilters(x => !x)}
+                >
+                    <FilterIcon
+                        size={20}
+                    />
                 </div>
-                <div className='column'>
-                    {width > 800 && <div className='break'/>}
-                    {secondHalf.map(item => <MenuItem item={item} key={item.name}/>)}
-                </div>
+                {showFilters &&
+                <div className='filter-overlay' onClick={() => setShowFilters(false)} />
+                }
+                <AnimatePresence>
+                {showFilters &&
+                <motion.div className='filter-options'
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.1 }}
+                >
+                    <div className='container'>
+                        <span className='title'>Sort</span>
+                        {filterChoices.map(x =>
+                            <>
+                            <div className='option'
+                                onClick={() => setFilterChoice(x)}
+                            >
+                                <div className={`indicator ${x === filterChoice ? 'selected' : ''}`} />
+                                {x}
+                            </div>
+                            <div className='break' />
+                            </>
+                        )}
+                    </div>
+                </motion.div>
+                }
+                </AnimatePresence>
+            </div>
+            <div className='menu-items'>
+                <AnimatePresence mode="popLayout">
+                    {activeMenuItems}
+                </AnimatePresence>
             </div>
         </div>
     )

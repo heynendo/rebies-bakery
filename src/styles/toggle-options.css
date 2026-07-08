@@ -1,0 +1,12 @@
+.toggle-options{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 4px 12px;
+    color: white;
+    background-color: rgba(169, 17, 37, 0.7);
+    border-radius: 10px;
+}
+.toggle-options > svg{
+    cursor: pointer;
+}

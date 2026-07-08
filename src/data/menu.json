@@ -1,178 +1,228 @@
-{
-  "menu": [
+[
     {
       "name": "Custom Cakes",
-      "price": "$80.00+",
-      "image": "menu-cake.jpg",
+      "images": ["cake-1.jpeg", "cake-2.jpeg", "cake-3.jpeg"],
+      "desc": "Each cake is made with real, high-quality ingredients and made to your specifications. Popular cake flavors and frosting options are listed below, but every cake can be customized to create the perfect cake for your celebration.",
       "details": {
-        "general": [],
-        "sizes": ["6” - $80.00+", "8” - $100.00+", "2 Tier - $200.00+"]
-      }
+        "flavors": [
+          "Double Chocolate",
+          "Vanilla",
+          "Funfetti",
+          "Pumpkin"
+        ],
+        "frostings": [
+          "Vanilla",
+          "Almond",
+          "Double Chocolate"
+        ],
+        "sizes": [
+          "6 inch",
+          "8 inch"
+        ],
+        "tiers": [
+          1,2,3,4
+        ]
+      },
+      "price": 80
     },
     {
       "name": "Cupcakes",
-      "price": "$38.00+",
-      "image": "menu-cupcake.png",
+      "images": ["cupcake-1.jpeg", "cupcake-2.JPG"],
+      "desc": "Each cupcake is baked fresh with real, high-quality ingredients and finished by hand. Popular flavor and frosting combinations are listed below, but every batch can be customized to fit your celebration. Cupcakes are sold by the dozen, with mix-and-match flavors available upon request.",
       "details": {
-        "general": ["Sold by the dozen", "Gourmet or stuffed", "Standard size or mini"],
         "flavors": [
-          "Double Chocolate", "Vanilla", "Funfetti", "Pumpkin", "Lemon", "Lemon Blueberry", "Red Velvet", "Oreo", "Pistachio", "Cookies & Cream", "Chocolate Chip", "Carrot Cake", "Churro", "Peanut Butter", "Strawberry"
+          "Double Chocolate",
+          "Vanilla",
+          "Funfetti",
+          "Pumpkin",
+          "Lemon",
+          "Lemon Blueberry",
+          "Red Velvet",
+          "Oreo",
+          "Pistachio",
+          "Cookies & Cream",
+          "Chocolate Chip",
+          "Carrot Cake",
+          "Churro",
+          "Peanut Butter",
+          "Strawberry"
         ],
         "frostings": [
-          "Vanilla", "Almond", "Double Chocolate", "Oreo", "Lemon", "Strawberry", "Raspberry", "Blueberry", "Salted Caramel", "Whipped Cream", "Cream Cheese", "Cinnamon Cream Cheese", "Chocolate Cream Cheese", "Peanut Butter", "Coconut"
+          "Vanilla",
+          "Almond",
+          "Double Chocolate",
+          "Oreo",
+          "Lemon",
+          "Strawberry",
+          "Raspberry",
+          "Blueberry",
+          "Salted Caramel",
+          "Whipped Cream",
+          "Cream Cheese",
+          "Cinnamon Cream Cheese",
+          "Chocolate Cream Cheese",
+          "Peanut Butter",
+          "Coconut"
         ]
-      }
+      },
+      "price": 38
     },
     {
       "name": "Chocolate Ganache",
-      "price": "$35.00",
-      "image": "",
-      "details": {
-        "general": ["Flourless “Flat Cake”", "Gluten Free"]
-      }
+      "images": [],
+      "desc": "A rich, silky ganache made with real chocolate and cream, perfect as a standalone treat or the finishing touch to any dessert table.",
+      "details": {},
+      "price": 35
     },
     {
       "name": "Lemon Squares",
-      "price": "$35.00",
-      "image": "lemon-squares.png",
-      "details": {
-        "general": ["Sold by the dozen"]
-      }
+      "images": ["lemon-squares-1.JPG"],
+      "desc": "Bright, tangy lemon curd sits atop a buttery shortbread crust for a treat that's equal parts sweet and citrusy. Sold by the dozen, these are a refreshing addition to any dessert spread.",
+      "details": {},
+      "price": 35
     },
     {
       "name": "Gourmet Cookies",
-      "price": "$36.00+",
-      "image": "cookies.png",
+      "images": [
+        "cookies-1.jpeg",
+        "cookies-2.jpeg",
+        "cookies-3.jpeg"
+      ],
+      "desc": "Sold by the dozen, these gourmet cookies are baked with real, high-quality ingredients and loaded with mix-ins. With flavors ranging from classic to creative, there's a combination to suit every craving.",
       "details": {
-        "general": ["Sold by the dozen"],
         "flavors": [
-          "Original Chocolate Chip", "Triple Chocolate Chip", "Chocolate Chip Caramel Pretzel", "Salted Brownie", "Chocolate Covered Strawberry", "Pumpkin Chocolate Chip", "Caramel Chocolate Chip", "Turtle", "Walnut White Chocolate Drizzled", "Cranberry White Chocolate Chip", "Peanut Butter Chocolate Chunk", "Chocolate Caramel", "Dark Chocolate Chip", "Shortbread Raspberry Thumbprints", "Chocolate Caramel Thumbprints", "White Chocolate Swirled Kiss Gingerbreads",  "Salted Pecan Caramel", "Stuffed Dubai Chocolate", "Stuffed Nutella Chocolate Chunk", "Espresso Fudge", "Red Velvet White Chocolate Chip", "Bailey's Irish Cream Chocolate Chip", "Butter Toffee Sugar Cookie", "Reese's Peanut Butter Chip", "Apple Cinnamon", "Biscoff Crunch", "Sea Salt Browned Butter Toffee"
+          "Original Chocolate Chip",
+          "Triple Chocolate Chip",
+          "Chocolate Chip Caramel Pretzel",
+          "Salted Brownie",
+          "Chocolate Covered Strawberry",
+          "Pumpkin Chocolate Chip",
+          "Caramel Chocolate Chip",
+          "Turtle",
+          "Walnut White Chocolate Drizzled",
+          "Cranberry White Chocolate Chip",
+          "Peanut Butter Chocolate Chunk",
+          "Chocolate Caramel",
+          "Dark Chocolate Chip",
+          "Shortbread Raspberry Thumbprints",
+          "Chocolate Caramel Thumbprints",
+          "White Chocolate Swirled Kiss Gingerbreads",
+          "Nutella",
+          "Salted Pecan Caramel"
         ]
-      }
+      },
+      "price": 36
     },
     {
       "name": "Bundt Cakes",
-      "price": "$40.00+",
-      "image": "bundt-cake.png",
+      "images": ["bundt-cake-1.jpg"],
+      "desc": "A dense, rich bundt cake baked from scratch and available in a range of flavors, from classic vanilla to bold whiskey cake. Each one can be finished with a glaze topping for an extra touch of sweetness.",
       "details": {
-        "flavors": [
-          "Pistachio", "Chocolate", "Vanilla", "Limoncello", "Red Velvet", "Whiskey Cake", "Glaze Topping"
-        ]
-      }
-    },
-    {
-      "name": "Cake Shooters",
-      "price": "$50.00+",
-      "image": "",
-      "details": {
-        "general": ["Sold by the dozen", "Cake + frosting of choice"]
-      }
+        "flavors": ["Pistachio", "Chocolate", "Vanilla", "Limoncello", "Red Velvet", "Whiskey Cake", "Glaze Topping"]
+      },
+      "price": 40
     },
     {
       "name": "Full Cheesecake",
-      "price": "$75.00+",
-      "image": "full-cheesecake.png",
+      "images": ["full-cheesecake-1.png"],
+      "desc": "A creamy, made-from-scratch cheesecake with your choice of crust and flavor, finished with a topping or glaze if desired. Perfect for sharing at any celebration.",
       "details": {
         "crust": ["Graham Cracker", "Oreo", "Gluten Free"],
-        "flavors": [
-          "Traditional", "Oreo", "Chocolate Chip", "Pumpkin", "Chocolate", "Strawberry", "Raspberry swirl", "Caramel Swirl", "Lemon Swirl", "Cherry", "Blueberry", "Lemon Curd", "Biscoff Cookie", "Whipped Cream", "Carmel apple", "Whipped Chocolate Ganache"
-        ]
-      }
+        "flavors": ["Traditional", "Oreo", "Chocolate Chip", "Pumpkin", "Chocolate", "Topping/Glaze with fruit of choice"]
+      },
+      "price": 60
     },
     {
       "name": "Mini Cheesecakes",
-      "price": "$50.00",
-      "image": "min-cheesecakes.png",
+      "images": ["mini-cheesecakes-1.jpg", "mini-cheesecakes-2.png"],
+      "desc": "Individually portioned cheesecakes made with real, high-quality ingredients and topped with your choice of flavor. Their bite-sized format makes them an easy addition to any dessert table.",
       "details": {
-        "general": ["Sold by the dozen"],
-        "flavors": [
-          "Strawberry", "Blackberry", "Blueberry", "Raspberry", "Cherry", "Lemon Curd", "Caramel", "Chocolate Chip", "Whipped Chocolate Ganache", "Whipped Cream Frosting"
-        ],
+        "flavors": ["Strawberry", "Blackberry", "Blueberry", "Raspberry", "Cherry", "Lemon Curd", "Caramel", "Chocolate Chip", "Whipped Chocolate Ganache", "Whipped Cream Frosting"],
         "crust": ["Graham Cracker", "Oreo"]
-      }
+      },
+      "price": 45
     },
     {
       "name": "Chocolate Covered Strawberries",
-      "price": "$45.00+",
-      "image": "chocolate-strawberries.jpg",
-      "details": {
-        "general": ["Sold by the dozen", "Gluten Free"]
-      }
+      "images": ["chocolate-strawberries-1.jpeg", "chocolate-strawberries-2.jpeg"],
+      "desc": "Fresh strawberries hand-dipped in rich chocolate for a simple, elegant treat. Sold by the dozen, they're a classic addition to any celebration.",
+      "details": {},
+      "price": 42
     },
     {
-      "name": "Mini Cannoli",
-      "price": "$35.00",
-      "image": "mini-cannoli.jpg",
+      "name": "Cannoli",
+      "images": ["cannoli-1.jpeg"],
+      "desc": "Crisp, hand-filled cannoli shells packed with a creamy chocolate chip filling and finished with a crumbled pistachio topping. Sold by the dozen, these are made fresh to order.",
       "details": {
-        "general": ["Sold by the dozen"],
         "flavors": ["Chocolate Chip with Pistachio Crumbled Topping"]
-      }
-    },
-    {
-      "name": "Chocolate Fudge",
-      "price": "$45.00",
-      "image": "",
-      "details": {
-        "general": ["Sold by the dozen"]
-      }
+      },
+      "price": 35
     },
     {
       "name": "Mousse Cups",
-      "price": "$50.00",
-      "image": "mousse-cups.png",
+      "images": ["mousse-cups-1.jpeg", "mousse-cups-2.jpg", "mousse-cups-3.jpeg"],
+      "desc": "Light, airy mousse layered in individual cups and available in a variety of fruity and chocolate flavors. Sold by the dozen, they make an elegant, no-fuss dessert option for any event.",
       "details": {
-        "general": ["Sold by the dozen", "Gluten Free Available"],
         "flavors": ["Strawberry", "Raspberry", "Lemon Cheesecake", "Blueberry", "Chocolate", "Pumpkin"]
-      }
+      },
+      "price": 45
     },
     {
       "name": "Pumpkin Squares",
-      "price": "$45.00",
-      "image": "",
-      "details": {
-        "general": ["Sold by the dozen"]
-      }
+      "images": [],
+      "desc": "A dense, spiced pumpkin bar topped with a smooth cream cheese frosting. Sold by the dozen, these are a seasonal favorite that pairs well with any fall celebration.",
+      "details": {},
+      "price": 35
     },
     {
       "name": "Biscotti",
-      "price": "$40.00+",
-      "image": "biscotti.jpg",
+      "images": ["biscotti-1.jpg"],
+      "desc": "Crunchy biscotti available in a variety of flavors, dipped and drizzled with chocolate. This item is sold by the dozen.",
       "details": {
-        "general": ["Sold by the dozen"],
-        "flavors": [
-          "Chocolate Chip - Half Dipped & Drizzled", "Butter Pecan - White Chocolate Drizzled", "Cranberry Walnut - White Chocolate Drizzled"
-        ]
-      }
+        "flavors": [ "Chocolate Chip - Half Dipped & Drizzled", "Butter Pecan - White Chocolate Drizzled", "Cranberry Walnut - White Chocolate Drizzled"]
+      },
+      "price": 35
+    },
+    {
+      "name": "Pecan Pie",
+      "images": [],
+      "desc": "A classic pecan pie made with real, high-quality ingredients, baked to a golden finish with a rich, decadent filling.",
+      "details": {},
+      "price": 40
+    },
+    {
+      "name": "Banana Bread Muffins",
+      "images": [],
+      "desc": "Soft banana bread baked in individual muffin form for an easy grab-and-go treat. These come sold by the dozen and are made with real, ripe bananas.",
+      "details": {},
+      "price": 30
     },
     {
       "name": "Chocolate Covered Pretzel Rods",
-      "price": "$35.00+",
-      "image": "pretzel-rods.jpg",
-      "details": {
-        "general": ["Sold by the dozen"]
-      }
+      "images": ["pretzel-rods-1.jpg", "pretzel-rods-2.jpeg"],
+      "desc": "Crunchy pretzel rods dipped in rich chocolate and finished with your choice of drizzle or toppings. Sold by the dozen, they offer the perfect balance of sweet and salty.",
+      "details": {},
+      "price": 35
     },
     {
       "name": "Gluten Free Brownies",
-      "price": "$45.00",
-      "image": "gf-brownies.png",
-      "details": {
-        "general": ["Sold by the dozen"]
-      }
+      "images": ["gf-brownies-1.png"],
+      "desc": "Fudgy, rich brownies made without gluten so everyone can enjoy them. Sold by the dozen, they're made with real, high-quality ingredients without sacrificing flavor.",
+      "details": {},
+      "price": 40
     },
     {
-      "name": "Toffee “Crack”",
-      "price": "$40.00+",
-      "image": "toffee-crack.png",
-      "details": {}
+      "name": "Toffee \u201cCrack\u201d",
+      "images": ["toffee-crack-1.png"],
+      "desc": "A buttery, crunchy toffee layered with chocolate and topped with your choice of add-ins. Addictively good, this treat lives up to its name.",
+      "details": {},
+      "price": 35
     },
     {
       "name": "Red Velvet Cake Truffles",
-      "price": "$60.00+",
-      "image": "",
-      "details": {
-        "general": ["Sold by the dozen"]
-      }
+      "images": [],
+      "desc": "Bite-sized red velvet cake balls rolled in a smooth coating for a rich, indulgent treat. Sold by the dozen, they're an easy, elegant addition to any dessert spread.",
+      "details": {},
+      "price": 50
     }
-  ]
-}
+]

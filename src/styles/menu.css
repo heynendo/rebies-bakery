@@ -1,24 +1,51 @@
 .menu{
+    padding: 0 50px;
     margin-top: var(--header-margin);
+    width: 100%;
+    max-width: 1400px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    min-height: calc(80vh - 150px);
 }
-.menu > span{
+.menu > .body-title{
+    margin-bottom: 25px;
+}
+.menu > .search-container{
+    position: relative;
+    display: flex;
+    align-content: stretch;
+    gap: 25px;
+    overflow: visible;
+}
+.menu > .search-container > .filter-toggle{
+    width: 45px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
-    margin: 50px 0;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: border 0.2s;
+    border: solid 2px transparent;
 }
-.menu > .container{
+.menu > .search-container > .filter-toggle:hover{
+    border: solid 2px var(--color-primary);
+}
+.menu .popular-items{
     display: flex;
-    flex-direction: column;
+    align-content: stretch;
+    gap: 15px;
     flex-wrap: wrap;
-    justify-self: center;
-    width: 90vw;
-    max-width: 500px;
-    margin: auto;
 }
-
-.column {
+.menu > .menu-items{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 25px;
+    overflow: hidden;
 }
 .break{
     width: 100%;
@@ -29,14 +56,14 @@
     margin: 5px auto;
 }
 
-@media (min-width: 1000px) {
-    .menu > .container {
-        flex-direction: row; 
-        max-width: 1200px;   
-        justify-content: space-between;
-        align-items: flex-start;
+@media (max-width: 800px){
+    .menu{
+        padding: 0 15px;
     }
-    .column {
-        width: 48%;
+}
+
+@media (max-width: 400px){
+    .menu{
+        padding: 0 7.5px;
     }
 }
