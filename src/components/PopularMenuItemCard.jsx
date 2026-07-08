@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import "../styles/menu-cards.css"
 import Badge from "../ui/Badge"
+import MenuImageLoader from "./MenuImageLoader"
 
 export default function PopularMenuItemCard({item, ...props}){
 
@@ -37,12 +38,15 @@ export default function PopularMenuItemCard({item, ...props}){
                     <Badge>
                         {specialTag}
                     </Badge>
-                    <Badge color="black">
+                    <Badge color="rgba(0, 0, 0, 0.8)">
                         ${item.price}.00+
                     </Badge>
                 </div>
             </div>
-            <img src={`/images/menu/${item.images[0]}`}/>
+            <img 
+                src={`/images/menu/${item.images[0]}`}
+                alt={item.name}
+            />
         </Link>
     )
 }

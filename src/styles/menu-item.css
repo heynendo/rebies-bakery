@@ -70,7 +70,7 @@
     height: 400px;
     justify-items: center;
 }
-.menu-item .image-gallery > .main-img > img{
+.menu-item .image-gallery > .main-img img{
     height: 100%;
 }
 .menu-item > .desc{
@@ -148,7 +148,7 @@
         padding: 10px;
         align-content: center;
     }
-    .menu-item .image-gallery > .main-img > img{
+    .menu-item .image-gallery > .main-img img{
         height: 85%;
         margin: auto;
     }

@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "motion/react";
 import Badge from "../ui/Badge";
 import scrollToTop from "../functions/scrollToTop";
 import ToggleOptions from "../ui/ToggleOptions";
+import MenuImageLoader from "../components/MenuImageLoader";
 
 export default function MenuItem() {
 
@@ -42,22 +43,27 @@ export default function MenuItem() {
                             <div key={image}
                                 onClick={() => setCurrentImage(image)}
                             >
-                                <img src={`/images/menu/${image}`}/>
+                                <MenuImageLoader
+                                    src={`/images/menu/${image}`}
+                                    alt={item.name}
+                                />
                             </div>
                         ))}
                     </div>
-                    <div className="main-img">
-                        <AnimatePresence mode="wait">
-                            <motion.img
-                                key={currentImage}
+                    <AnimatePresence mode="wait">
+                        <motion.div className="main-img"
+                            key={currentImage}
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            transition={{ duration: 0.1 }}
+                        >
+                            <MenuImageLoader
                                 src={`/images/menu/${currentImage}`}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 0.1 }}
+                                alt={item.name}
                             />
-                        </AnimatePresence>
-                    </div>
+                        </motion.div>
+                    </AnimatePresence>
                 </div>
                 :
                 <div className="image-gallery-placeholder" />

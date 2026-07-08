@@ -2,7 +2,7 @@
     {
       "name": "Custom Cakes",
       "images": ["cake-1.jpeg", "cake-2.jpeg", "cake-3.jpeg"],
-      "desc": "Each cake is made with real, high-quality ingredients and crafted to your specifications. Popular cake flavors and frosting options are listed below, but every cake can be customized to create the perfect cake for your celebration.",
+      "desc": "Each cake is made with real, high-quality ingredients and made to your specifications. Popular cake flavors and frosting options are listed below, but every cake can be customized to create the perfect cake for your celebration.",
       "details": {
         "flavors": [
           "Double Chocolate",
@@ -28,7 +28,7 @@
     {
       "name": "Cupcakes",
       "images": ["cupcake-1.jpeg", "cupcake-2.JPG"],
-      "desc": "Beautiful cupcakes available in a wide variety of flavors and frostings, perfect for any occasion.",
+      "desc": "Each cupcake is baked fresh with real, high-quality ingredients and finished by hand. Popular flavor and frosting combinations are listed below, but every batch can be customized to fit your celebration. Cupcakes are sold by the dozen, with mix-and-match flavors available upon request.",
       "details": {
         "flavors": [
           "Double Chocolate",
@@ -70,14 +70,14 @@
     {
       "name": "Chocolate Ganache",
       "images": [],
-      "desc": "A rich, flourless chocolate cake with a smooth ganache finish. This gluten-free \"flat cake\" is a decadent treat for chocolate lovers.",
+      "desc": "A rich, silky ganache made with real chocolate and cream, perfect as a standalone treat or the finishing touch to any dessert table.",
       "details": {},
       "price": 35
     },
     {
       "name": "Lemon Squares",
       "images": ["lemon-squares-1.JPG"],
-      "desc": "Sweet and tangy lemon squares with a buttery crust. This item is sold by the dozen.",
+      "desc": "Bright, tangy lemon curd sits atop a buttery shortbread crust for a treat that's equal parts sweet and citrusy. Sold by the dozen, these are a refreshing addition to any dessert spread.",
       "details": {},
       "price": 35
     },
@@ -88,7 +88,7 @@
         "cookies-2.jpeg",
         "cookies-3.jpeg"
       ],
-      "desc": "A delicious assortment of gourmet cookie flavors, from classic chocolate chip to specialty options like salted pecan caramel and Nutella. This item is sold by the dozen.",
+      "desc": "Sold by the dozen, these gourmet cookies are baked with real, high-quality ingredients and loaded with mix-ins. With flavors ranging from classic to creative, there's a combination to suit every craving.",
       "details": {
         "flavors": [
           "Original Chocolate Chip",
@@ -116,7 +116,7 @@
     {
       "name": "Bundt Cakes",
       "images": ["bundt-cake-1.jpg"],
-      "desc": "Available in a variety of flavors, finished with a glaze topping.",
+      "desc": "A dense, rich bundt cake baked from scratch and available in a range of flavors, from classic vanilla to bold whiskey cake. Each one can be finished with a glaze topping for an extra touch of sweetness.",
       "details": {
         "flavors": ["Pistachio", "Chocolate", "Vanilla", "Limoncello", "Red Velvet", "Whiskey Cake", "Glaze Topping"]
       },
@@ -125,7 +125,7 @@
     {
       "name": "Full Cheesecake",
       "images": ["full-cheesecake-1.png"],
-      "desc": "Rich and creamy cheesecake available in a variety of flavors and crusts, with optional fruit toppings and glazes.",
+      "desc": "A creamy, made-from-scratch cheesecake with your choice of crust and flavor, finished with a topping or glaze if desired. Perfect for sharing at any celebration.",
       "details": {
         "crust": ["Graham Cracker", "Oreo", "Gluten Free"],
         "flavors": ["Traditional", "Oreo", "Chocolate Chip", "Pumpkin", "Chocolate", "Topping/Glaze with fruit of choice"]
@@ -134,8 +134,8 @@
     },
     {
       "name": "Mini Cheesecakes",
-      "images": ["mini-cheesecakes-1.png"],
-      "desc": "Bite-sized cheesecakes available in a variety of flavors and crust options. This item is sold by the dozen.",
+      "images": ["mini-cheesecakes-1.jpg", "mini-cheesecakes-2.png"],
+      "desc": "Individually portioned cheesecakes made with real, high-quality ingredients and topped with your choice of flavor. Their bite-sized format makes them an easy addition to any dessert table.",
       "details": {
         "flavors": ["Strawberry", "Blackberry", "Blueberry", "Raspberry", "Cherry", "Lemon Curd", "Caramel", "Chocolate Chip", "Whipped Chocolate Ganache", "Whipped Cream Frosting"],
         "crust": ["Graham Cracker", "Oreo"]
@@ -145,21 +145,14 @@
     {
       "name": "Chocolate Covered Strawberries",
       "images": ["chocolate-strawberries-1.jpeg", "chocolate-strawberries-2.jpeg"],
-      "desc": "Fresh strawberries dipped in smooth chocolate, a gluten-free treat perfect for any celebration. This item is sold by the dozen.",
+      "desc": "Fresh strawberries hand-dipped in rich chocolate for a simple, elegant treat. Sold by the dozen, they're a classic addition to any celebration.",
       "details": {},
       "price": 42
     },
     {
-      "name": "Mini Almond Cakes",
-      "images": [],
-      "desc": "Delicate, almond-flavored mini cakes. This item is sold by the dozen.",
-      "details": {},
-      "price": 40
-    },
-    {
       "name": "Cannoli",
       "images": ["cannoli-1.jpeg"],
-      "desc": "Classic cannoli filled with chocolate chip cream and topped with crumbled pistachio. This item is sold by the dozen.",
+      "desc": "Crisp, hand-filled cannoli shells packed with a creamy chocolate chip filling and finished with a crumbled pistachio topping. Sold by the dozen, these are made fresh to order.",
       "details": {
         "flavors": ["Chocolate Chip with Pistachio Crumbled Topping"]
       },
@@ -168,7 +161,7 @@
     {
       "name": "Mousse Cups",
       "images": ["mousse-cups-1.jpeg", "mousse-cups-2.jpg", "mousse-cups-3.jpeg"],
-      "desc": "Light and airy mousse available in a variety of flavors, with gluten-free options available. This item is sold by the dozen.",
+      "desc": "Light, airy mousse layered in individual cups and available in a variety of fruity and chocolate flavors. Sold by the dozen, they make an elegant, no-fuss dessert option for any event.",
       "details": {
         "flavors": ["Strawberry", "Raspberry", "Lemon Cheesecake", "Blueberry", "Chocolate", "Pumpkin"]
       },
@@ -177,7 +170,7 @@
     {
       "name": "Pumpkin Squares",
       "images": [],
-      "desc": "Soft, spiced pumpkin squares perfect for fall gatherings. This item is sold by the dozen.",
+      "desc": "A dense, spiced pumpkin bar topped with a smooth cream cheese frosting. Sold by the dozen, these are a seasonal favorite that pairs well with any fall celebration.",
       "details": {},
       "price": 35
     },
@@ -193,42 +186,42 @@
     {
       "name": "Pecan Pie",
       "images": [],
-      "desc": "A classic pecan pie with a buttery crust and rich, sweet filling.",
+      "desc": "A classic pecan pie made with real, high-quality ingredients, baked to a golden finish with a rich, decadent filling.",
       "details": {},
       "price": 40
     },
     {
       "name": "Banana Bread Muffins",
       "images": [],
-      "desc": "Perfect to add to your breakfast, or enjoy as a snack. This item is sold by the dozen.",
+      "desc": "Soft banana bread baked in individual muffin form for an easy grab-and-go treat. These come sold by the dozen and are made with real, ripe bananas.",
       "details": {},
       "price": 30
     },
     {
       "name": "Chocolate Covered Pretzel Rods",
       "images": ["pretzel-rods-1.jpg", "pretzel-rods-2.jpeg"],
-      "desc": "Crunchy pretzel rods dipped in smooth chocolate. This item is sold by the dozen.",
+      "desc": "Crunchy pretzel rods dipped in rich chocolate and finished with your choice of drizzle or toppings. Sold by the dozen, they offer the perfect balance of sweet and salty.",
       "details": {},
       "price": 35
     },
     {
       "name": "Gluten Free Brownies",
       "images": ["gf-brownies-1.png"],
-      "desc": "Rich, fudgy brownies made without gluten. This item is sold by the dozen.",
+      "desc": "Fudgy, rich brownies made without gluten so everyone can enjoy them. Sold by the dozen, they're made with real, high-quality ingredients without sacrificing flavor.",
       "details": {},
       "price": 40
     },
     {
       "name": "Toffee \u201cCrack\u201d",
       "images": ["toffee-crack-1.png"],
-      "desc": "A crunchy, buttery toffee treat that's hard to stop eating.",
+      "desc": "A buttery, crunchy toffee layered with chocolate and topped with your choice of add-ins. Addictively good, this treat lives up to its name.",
       "details": {},
       "price": 35
     },
     {
       "name": "Red Velvet Cake Truffles",
       "images": [],
-      "desc": "Bite-sized red velvet cake truffles, rich and decadent. This item is sold by the dozen.",
+      "desc": "Bite-sized red velvet cake balls rolled in a smooth coating for a rich, indulgent treat. Sold by the dozen, they're an easy, elegant addition to any dessert spread.",
       "details": {},
       "price": 50
     }

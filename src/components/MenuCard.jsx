@@ -4,6 +4,7 @@ import rebiesLogo from "../assets/rebies-logo.jpg"
 import '../styles/menu-item.css'
 import Badge from "../ui/Badge"
 import { Link } from "react-router-dom"
+import MenuImageLoader from "./MenuImageLoader"
 
 const MotionLink = motion.create(Link)
 
@@ -25,7 +26,12 @@ export default function MenuCard({item, ...props}){
                 <h3>{item.name}</h3>
                 <Badge>${item.price}.00+</Badge>
             </div>
-            {item?.images[0] && <img src={`/images/menu/${item.images[0]}`}/>}
+            {item?.images[0] &&
+                <img 
+                    src={`/images/menu/${item.images[0]}`}
+                    alt={item.name}
+                />
+            }
         </MotionLink>
     )
 }

@@ -58,6 +58,7 @@ function Menu(){
             <div className='popular-items'>
                 {popularItems.map(item => <PopularMenuItemCard item={item} key={item.name}/>)}
             </div>
+            <div className='break'/>
             <div className="search-container">
                 <SearchBar
                     userInput={userInput}
@@ -70,12 +71,17 @@ function Menu(){
                         size={20}
                     />
                 </div>
+                {showFilters &&
+                <div className='filter-overlay' onClick={() => setShowFilters(false)} />
+                }
                 <AnimatePresence>
                 {showFilters &&
-                <>
-                <div className='filter-overlay' onClick={() => setShowFilters(false)} />
-                <div className='filter-options'>
-                    <div className='head' />
+                <motion.div className='filter-options'
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.1 }}
+                >
                     <div className='container'>
                         <span className='title'>Sort</span>
                         {filterChoices.map(x =>
@@ -90,13 +96,11 @@ function Menu(){
                             </>
                         )}
                     </div>
-                </div>
-                </>
+                </motion.div>
                 }
                 </AnimatePresence>
             </div>
             <div className='menu-items'>
-                <div className='break'/>
                 <AnimatePresence mode="popLayout">
                     {activeMenuItems}
                 </AnimatePresence>
