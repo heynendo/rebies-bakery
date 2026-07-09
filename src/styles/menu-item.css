@@ -54,6 +54,10 @@
     cursor: pointer;
     opacity: 0.85;
     transition: opacity 0.2s;
+    overflow: visible;
+}
+.menu-item .image-gallery > .selector > .menu-image-loader{
+    overflow: visible;
 }
 .menu-item .image-gallery > .selector > div:hover{
     opacity: 1;   
@@ -62,7 +66,7 @@
     height: 100%;
     flex-shrink: 1;
 }
-.menu-item .image-gallery > .main-img{
+.menu-item .image-gallery > .main-img > div{
     background-color: white;
     aspect-ratio: 8/6;
     border-radius: 25px;
@@ -72,6 +76,20 @@
 }
 .menu-item .image-gallery > .main-img img{
     height: 100%;
+}
+.menu-item .image-gallery-placeholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 275px;
+    width: 100%;
+    max-width: 500px;
+    min-width: 0;
+}
+.menu-item .image-gallery-placeholder img{
+    width: 75%;
+    max-width: 300px;
+    opacity: 0.3;
 }
 .menu-item > .desc{
     display: block;

@@ -9,15 +9,7 @@ import FilterIcon from '../ui/icons/FilterIcon'
 import PopularMenuItemCard from '../components/PopularMenuItemCard'
 import getWindowWidth from '../functions/GetWindowWidth'
 import { motion, AnimatePresence } from 'motion/react'
-import '../styles/filter-options.css'
-
-const filterChoices = 
-[
-    "Price Low to High",
-    "Price High to Low",
-    "Alphabetical: A to Z",
-    "Alphabetical: Z to A"
-]
+import FilterOptions from '../ui/FilterOptions'
 
 function Menu(){
 
@@ -76,27 +68,10 @@ function Menu(){
                 }
                 <AnimatePresence>
                 {showFilters &&
-                <motion.div className='filter-options'
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.1 }}
-                >
-                    <div className='container'>
-                        <span className='title'>Sort</span>
-                        {filterChoices.map(x =>
-                            <>
-                            <div className='option'
-                                onClick={() => setFilterChoice(x)}
-                            >
-                                <div className={`indicator ${x === filterChoice ? 'selected' : ''}`} />
-                                {x}
-                            </div>
-                            <div className='break' />
-                            </>
-                        )}
-                    </div>
-                </motion.div>
+                <FilterOptions
+                    filterChoice={filterChoice}
+                    setFilterChoice={setFilterChoice}
+                />
                 }
                 </AnimatePresence>
             </div>
