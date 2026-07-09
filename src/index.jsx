@@ -16,7 +16,6 @@ import MenuItem from './pages/MenuItem'
 
 function AppRoutes(){
   const location = useLocation()
-  console.log(location.pathname)
 
   return(
     <>

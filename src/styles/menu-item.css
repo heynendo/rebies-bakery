@@ -78,6 +78,8 @@
     height: 100%;
 }
 .menu-item .image-gallery-placeholder{
+    background-color: white;
+    border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;

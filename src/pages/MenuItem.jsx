@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { TailedArrow4 } from "icons-by-heynendo";
 import { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
@@ -6,6 +6,8 @@ import Badge from "../ui/Badge";
 import scrollToTop from "../functions/scrollToTop";
 import ToggleOptions from "../ui/ToggleOptions";
 import MenuImageLoader from "../components/MenuImageLoader";
+import RebiesLogo from '../assets/rebies-logo.jpg'
+import menuData from "../data/menu.json"
 
 export default function MenuItem() {
 
@@ -14,19 +16,62 @@ export default function MenuItem() {
     }, []);
 
     const location = useLocation();
-    const item = location.state?.item;
+    const { id } = useParams();
 
-    // TODO: load item from JSON if page refreshed
+    const normalize = (str) =>
+        str
+            ?.trim()
+            .toLowerCase()
+            .replace(/\s+/g, " "); // collapse repeated spaces
+
+    const item = useMemo(() => {
+        if (location.state?.item) return location.state.item;
+        if (!id) return null;
+
+        let decodedName = id;
+        try {
+            decodedName = decodeURIComponent(id);
+        } catch {
+            // already decoded or malformed — fall back to raw value
+        }
+
+        const target = normalize(decodedName);
+        return menuData.find((entry) => normalize(entry.name) === target) ?? null;
+    }, [location.state, id]);
 
     const [currentImage, setCurrentImage] = useState(
-        item.images[0] ?? null
+        item?.images?.[0] ?? null
     );
+
+    useEffect(() => {
+        setCurrentImage(item?.images?.[0] ?? null);
+    }, [item]);
+
+    if (!item) {
+        return (
+            <div className="menu-item">
+                <div className="heading">
+                    <Link to='/menu'>
+                        <TailedArrow4
+                            rotation={180}
+                            color="#A91125"
+                        />
+                    </Link>
+                    <h2>Item not found</h2>
+                    <div />
+                </div>
+                <span className="desc">
+                    Sorry, we couldn't find that menu item.
+                </span>
+            </div>
+        );
+    }
 
     return (
         <div className="menu-item">
 
             <div className="heading">
-                <Link to={-1}>
+                <Link to="/menu">
                     <TailedArrow4
                         rotation={180}
                         color="#A91125"
@@ -67,7 +112,7 @@ export default function MenuItem() {
                 </div>
                 :
                 <div className="image-gallery-placeholder">
-                    <img src="/src/assets/rebies-logo.jpg" />
+                    <img src={RebiesLogo} />
                 </div>
             }
 
