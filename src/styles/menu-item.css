@@ -166,6 +166,10 @@
         padding: 10px;
         align-content: center;
     }
+    .menu-item .image-gallery > .main-img > div{
+        height: 100%;
+        width: 100%;
+    }
     .menu-item .image-gallery > .main-img img{
         height: 85%;
         margin: auto;
