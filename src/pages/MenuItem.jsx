@@ -66,7 +66,9 @@ export default function MenuItem() {
                     </AnimatePresence>
                 </div>
                 :
-                <div className="image-gallery-placeholder" />
+                <div className="image-gallery-placeholder">
+                    <img src="/src/assets/rebies-logo.jpg" />
+                </div>
             }
 
             <span className="desc">

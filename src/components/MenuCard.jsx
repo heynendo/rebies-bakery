@@ -27,7 +27,7 @@ export default function MenuCard({item, ...props}){
                 <Badge>${item.price}.00+</Badge>
             </div>
             {item?.images[0] &&
-                <img 
+                <MenuImageLoader
                     src={`/images/menu/${item.images[0]}`}
                     alt={item.name}
                 />

@@ -6,10 +6,9 @@ function Footer(){
     return(
         <footer>
             <div>
-                <div className="certificate"><a href="/food-handler-cert.png" target="_blank" title="Click to view certificate">Food Handling Trained & Certified</a></div>
+                <span>website created by<a target="_blank" href="https://www.donovanheynen.com/">Donovan Heynen</a></span>
                 <img src={RebiesLogo} />
             </div>
-            <span>website created by&nbsp;<a target="_blank" href="https://www.donovanheynen.com/">Donovan Heynen</a></span>
         </footer>
     )
 }

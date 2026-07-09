@@ -43,7 +43,7 @@ export default function PopularMenuItemCard({item, ...props}){
                     </Badge>
                 </div>
             </div>
-            <img 
+            <MenuImageLoader
                 src={`/images/menu/${item.images[0]}`}
                 alt={item.name}
             />

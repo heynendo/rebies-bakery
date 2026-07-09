@@ -47,13 +47,13 @@
 .popular-menu-item .badges h2{
     color: white;
 }
-.popular-menu-item > img{
+.popular-menu-item .menu-image-loader{
     height: 200px;
     aspect-ratio: 150/200;
     flex-shrink: 0;
     transition: scale 0.05s ease-in;
 }
-.popular-menu-item:hover > img{
+.popular-menu-item:hover .menu-image-loader{
     scale: 1.035;
 }
 .menu .menu-card{
@@ -89,13 +89,11 @@
 .menu-card > .container > .badge{
     background-color: white;
 }
-.menu-card > img{
-    margin: 5px 0;
-    flex-shrink: 0;
-    height: 90%;
+.menu-card .menu-image-loader{
     transition: scale 0.05s ease-in;
+    height: 100%;
 }
-.menu-card:hover > img{
+.menu-card:hover img{
     scale: 1.035;
 }
 @media (max-width: 600px){
