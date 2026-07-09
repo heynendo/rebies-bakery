@@ -11,10 +11,10 @@
 }
 
 .menu-image-loader__skeleton {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, #ffffff 25%, #fdfdfd 37%, #ffffff 63%);
-    background-size: 400% 100%;
+    background: linear-gradient(90deg, #ffffff 25%, #f8f8f8 37%, #ffffff 63%);
+    background-size: 500% 100%;
+    width: 95%;
+    height: 95%;
     animation: menu-image-shimmer 1.4s ease infinite;
 }
 
