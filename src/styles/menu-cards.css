@@ -115,6 +115,9 @@
         height: 125px;
         cursor: pointer;
     }
+    .menu-card .container{
+        min-width: 200px;
+    }
     .menu-card .container > h3{
         font-size: 1.15rem;
     }
@@ -122,9 +125,5 @@
         min-width: 100px;
         padding: 4px 15px;
         font-size: 0.9rem;
-    }
-    .menu-card > img{
-        height: 80%; 
-        align-self: center;
     }
 }
