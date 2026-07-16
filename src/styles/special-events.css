@@ -1,0 +1,27 @@
+
+.special-events{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 25px;
+    width: 100vw;
+    margin: 25px 0;
+}
+
+.special-events h3{
+font-style: normal;
+font-weight: 700;
+font-size: 2.25rem;
+color: #000000;
+}
+
+.special-events .container{
+    display: flex;
+    justify-self: center;
+    gap: 25px;
+}
+
+.special-events .badge{
+    flex-shrink: 0;
+}

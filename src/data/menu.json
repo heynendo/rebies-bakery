@@ -2,18 +2,50 @@
     {
       "name": "Custom Cakes",
       "images": ["cake-1.jpeg", "cake-2.jpeg", "cake-3.jpeg"],
-      "desc": "Each cake is made with real, high-quality ingredients and made to your specifications. Popular cake flavors and frosting options are listed below, but every cake can be customized to create the perfect cake for your celebration.",
+      "desc": "The perfect cake deserves the perfect frosting! Every frosting and filling is made fresh to complement your cake and create a desert that is as beautiful as it is delicious. Cakes can be customized to create the perfect dessert for your celebration.",
       "details": {
         "flavors": [
-          "Double Chocolate",
+          "Chocolate",
           "Vanilla",
           "Funfetti",
-          "Pumpkin"
+          "Pumpkin",
+          "Lemon",
+          "Oreo",
+          "Chocolate Chip",
+          "Red Velvet",
+          "Carrot",
+          "Strawberry"
         ],
         "frostings": [
           "Vanilla",
-          "Almond",
-          "Double Chocolate"
+          "Chocolate",
+          "Oreo",
+          "Cream Cheese",
+          "Chocolate Ganache",
+          "Whipped Cream",
+          "Lemon",
+          "Mocha",
+          "Strawberry",
+          "Blueberry",
+          "Raspberry",
+          "Peanut Butter",
+          "Coconut"
+        ],
+        "fillings": [
+          "Buttercream",
+          "Double Chocolate",
+          "Chocolate Ganache",
+          "Cream Cheese",
+          "Biscoff Cookie Butter",
+          "Strawberry (fresh or jam)",
+          "Raspberry (fresh or jam)",
+          "Blueberry (fresh or jam)",
+          "Cherry (fresh or jam)",
+          "Lemon Curd",
+          "Pastry Cream",
+          "Chocolate Mousse",
+          "Whipped Cream",
+          "Oreo"
         ],
         "sizes": [
           "6 inch",
@@ -189,13 +221,6 @@
       "desc": "A classic pecan pie made with real, high-quality ingredients, baked to a golden finish with a rich, decadent filling.",
       "details": {},
       "price": 40
-    },
-    {
-      "name": "Banana Bread Muffins",
-      "images": [],
-      "desc": "Soft banana bread baked in individual muffin form for an easy grab-and-go treat. These come sold by the dozen and are made with real, ripe bananas.",
-      "details": {},
-      "price": 30
     },
     {
       "name": "Chocolate Covered Pretzel Rods",
