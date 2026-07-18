@@ -27,7 +27,7 @@ export default function SpecialEvents(){
                     className="container"
                     animate={{ x: ["0%", "-50%"] }}
                     transition={{
-                        duration: 30,
+                        duration: 35,
                         ease: "linear",
                         repeat: Infinity,
                     }}
