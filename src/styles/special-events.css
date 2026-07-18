@@ -1,25 +1,39 @@
-
 .special-events{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     text-align: center;
     gap: 25px;
-    width: 100vw;
+    width: 100%;
     margin: 25px 0;
+    overflow: hidden;
 }
 
 .special-events h3{
-font-style: normal;
-font-weight: 700;
-font-size: 2.25rem;
-color: #000000;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: #000000;
+}
+
+.special-events p{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.15rem;
+    color: #181818;
+    max-width: 800px;
+    align-self: center;
+    padding: 0 15px;
 }
 
 .special-events .container{
     display: flex;
-    justify-self: center;
     gap: 25px;
+    width: max-content;
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
 
 .special-events .badge{

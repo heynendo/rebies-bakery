@@ -31,8 +31,8 @@
 }
 .card-container > p{
     font-style: italic;
-    font-weight: 600;
-    font-size: 0.9em;
+    font-weight: 400;
+    font-size: 0.95rem;
     color: white;
     align-content: center;
     padding: 0 50px;

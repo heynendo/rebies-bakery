@@ -162,6 +162,7 @@
     }
     .contact .grid > form{
         width: 90vw;
+        padding-bottom: 5px;
     }
     .contact form > .container{
         width: 85vw;
