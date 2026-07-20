@@ -3,11 +3,11 @@ import Badge from "../ui/Badge"
 import "../styles/special-events.css"
 
 const EVENTS = [
-    "Weddings",
     "Baby Showers",
     "Birthdays",
     "Anniversaries",
     "Graduation Parties",
+    "Weddings",
     "BBQs & Backyard Gatherings",
     "Holiday Celebrations",
     "Corporate Events",
@@ -48,7 +48,7 @@ export default function SpecialEvents(){
                     ))}
                 </motion.div>
 
-            <p>No matter the occasion, we'd love to help bring your part to life. We'll create something beautiful and delicious that your guests will remember long after the last bite!</p>
+            <p>No matter the occasion, we'd love to help bring your vision to life and create something your guests will be talking about long after the last bite!</p>
         </div>
     )
 }

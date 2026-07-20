@@ -14,7 +14,9 @@
           "Chocolate Chip",
           "Red Velvet",
           "Carrot",
-          "Strawberry"
+          "Strawberry",
+          "German Chocolate",
+          "Pistachio"
         ],
         "frostings": [
           "Vanilla",
@@ -29,7 +31,9 @@
           "Blueberry",
           "Raspberry",
           "Peanut Butter",
-          "Coconut"
+          "Coconut",
+          "Mocha",
+          "Caramel"
         ],
         "fillings": [
           "Buttercream",
@@ -101,7 +105,7 @@
     },
     {
       "name": "Chocolate Ganache",
-      "images": [],
+      "images": ["chocolate-ganache-1.jpg"],
       "desc": "A rich, silky ganache made with real chocolate and cream, perfect as a standalone treat or the finishing touch to any dessert table.",
       "details": {},
       "price": 35
@@ -150,7 +154,7 @@
       "images": ["bundt-cake-1.jpg"],
       "desc": "A dense, rich bundt cake baked from scratch and available in a range of flavors, from classic vanilla to bold whiskey cake. Each one can be finished with a glaze topping for an extra touch of sweetness.",
       "details": {
-        "flavors": ["Pistachio", "Chocolate", "Vanilla", "Limoncello", "Red Velvet", "Whiskey Cake", "Glaze Topping"]
+        "flavors": ["Pistachio", "Chocolate", "Vanilla", "Limoncello", "Red Velvet", "Whiskey Cake", "Glaze Topping", "Lemon Blueberry"]
       },
       "price": 40
     },
@@ -184,9 +188,9 @@
     {
       "name": "Cannoli",
       "images": ["cannoli-1.jpeg"],
-      "desc": "Crisp, hand-filled cannoli shells packed with a creamy chocolate chip filling and finished with a crumbled pistachio topping. Sold by the dozen, these are made fresh to order.",
+      "desc": "Crisp, hand-filled cannoli shells packed with a creamy chocolate chip filling and optionally finished with a crumbled pistachio topping. Sold by the dozen, these are made fresh to order.",
       "details": {
-        "flavors": ["Chocolate Chip with Pistachio Crumbled Topping"]
+        "options": ["Chocolate Chip", "Pistachio Crumbled Topping"]
       },
       "price": 35
     },
@@ -211,7 +215,7 @@
       "images": ["biscotti-1.jpg"],
       "desc": "Crunchy biscotti available in a variety of flavors, dipped and drizzled with chocolate. This item is sold by the dozen.",
       "details": {
-        "flavors": [ "Chocolate Chip - Half Dipped & Drizzled", "Butter Pecan - White Chocolate Drizzled", "Cranberry Walnut - White Chocolate Drizzled"]
+        "flavors": [ "Chocolate Chip - Half Dipped & Drizzled", "Butter Pecan - White Chocolate Drizzled", "Cranberry Walnut - White Chocolate Drizzled", "Toffee - White Chocolate Drizzled"]
       },
       "price": 35
     },
