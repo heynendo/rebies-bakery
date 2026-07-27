@@ -173,7 +173,7 @@
       "images": ["mini-cheesecakes-1.jpg", "mini-cheesecakes-2.png"],
       "desc": "Individually portioned cheesecakes made with real, high-quality ingredients and topped with your choice of flavor. Their bite-sized format makes them an easy addition to any dessert table.",
       "details": {
-        "flavors": ["Strawberry", "Blackberry", "Blueberry", "Raspberry", "Cherry", "Lemon Curd", "Caramel", "Chocolate Chip", "Whipped Chocolate Ganache", "Whipped Cream Frosting"],
+        "flavors": ["Strawberry", "Blackberry", "Blueberry", "Raspberry", "Cherry", "Lemon Curd", "Caramel", "Caramel Apple", "Chocolate Chip", "Whipped Chocolate Ganache", "Whipped Cream Frosting"],
         "crust": ["Graham Cracker", "Oreo"]
       },
       "price": 45
