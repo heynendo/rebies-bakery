@@ -33,7 +33,7 @@
     display: flex;
     gap: 25px;
     justify-content: center;
-    width: 100%;
+    width: 90%;
     max-width: 1200px;
 }
 .menu-item .image-gallery > .selector{
@@ -146,7 +146,7 @@
     padding: 10px 100px;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
 }
-@media (max-width: 600px){
+@media (max-width: 700px){
     .menu-item{
         padding: 0 10px;
     }
@@ -160,12 +160,23 @@
         gap: 10px;
     }
     .menu-item .image-gallery > .selector > div{
-        height: 65px;
-        width: 65px;
+        height: 60px;
+        width: 60px;
+    }
+    
+    .menu-item .image-gallery > .main-img > div{
+        background-color: white;
+        aspect-ratio: 8/6;
+        border-radius: 25px;
+        padding: 0;
+        justify-items: center;
+    }
+    .menu-item .image-gallery > .main-img img{
+        height: auto;
     }
     .menu-item .image-gallery > .main-img{
-        height: 275px;
-        padding: 10px;
+        width: 100%;
+        padding: 0;
         align-content: center;
     }
     .menu-item .image-gallery > .main-img > div{

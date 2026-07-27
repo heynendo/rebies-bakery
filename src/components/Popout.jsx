@@ -2,7 +2,7 @@ import { AnimatePresence, motion } from "motion/react"
 import "../styles/popout.css"
 import { useState } from "react"
 import { Exit1 } from "icons-by-heynendo";
-import getWindowWidth from "../functions/GetWindowWidth";
+import getWindowWidth  from "../functions/GetWindowWidth";
 
 export default function Popout({showPopout, setShowPopout, children}){
 

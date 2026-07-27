@@ -2,18 +2,54 @@
     {
       "name": "Custom Cakes",
       "images": ["cake-1.jpeg", "cake-2.jpeg", "cake-3.jpeg"],
-      "desc": "Each cake is made with real, high-quality ingredients and made to your specifications. Popular cake flavors and frosting options are listed below, but every cake can be customized to create the perfect cake for your celebration.",
+      "desc": "The perfect cake deserves the perfect frosting! Every frosting and filling is made fresh to complement your cake and create a desert that is as beautiful as it is delicious. Cakes can be customized to create the perfect dessert for your celebration.",
       "details": {
         "flavors": [
-          "Double Chocolate",
+          "Chocolate",
           "Vanilla",
           "Funfetti",
-          "Pumpkin"
+          "Pumpkin",
+          "Lemon",
+          "Oreo",
+          "Chocolate Chip",
+          "Red Velvet",
+          "Carrot",
+          "Strawberry",
+          "German Chocolate",
+          "Pistachio"
         ],
         "frostings": [
           "Vanilla",
-          "Almond",
-          "Double Chocolate"
+          "Chocolate",
+          "Oreo",
+          "Cream Cheese",
+          "Chocolate Ganache",
+          "Whipped Cream",
+          "Lemon",
+          "Mocha",
+          "Strawberry",
+          "Blueberry",
+          "Raspberry",
+          "Peanut Butter",
+          "Coconut",
+          "Mocha",
+          "Caramel"
+        ],
+        "fillings": [
+          "Buttercream",
+          "Double Chocolate",
+          "Chocolate Ganache",
+          "Cream Cheese",
+          "Biscoff Cookie Butter",
+          "Strawberry (fresh or jam)",
+          "Raspberry (fresh or jam)",
+          "Blueberry (fresh or jam)",
+          "Cherry (fresh or jam)",
+          "Lemon Curd",
+          "Pastry Cream",
+          "Chocolate Mousse",
+          "Whipped Cream",
+          "Oreo"
         ],
         "sizes": [
           "6 inch",
@@ -69,7 +105,7 @@
     },
     {
       "name": "Chocolate Ganache",
-      "images": [],
+      "images": ["chocolate-ganache-1.jpg"],
       "desc": "A rich, silky ganache made with real chocolate and cream, perfect as a standalone treat or the finishing touch to any dessert table.",
       "details": {},
       "price": 35
@@ -118,7 +154,7 @@
       "images": ["bundt-cake-1.jpg"],
       "desc": "A dense, rich bundt cake baked from scratch and available in a range of flavors, from classic vanilla to bold whiskey cake. Each one can be finished with a glaze topping for an extra touch of sweetness.",
       "details": {
-        "flavors": ["Pistachio", "Chocolate", "Vanilla", "Limoncello", "Red Velvet", "Whiskey Cake", "Glaze Topping"]
+        "flavors": ["Pistachio", "Chocolate", "Vanilla", "Limoncello", "Red Velvet", "Whiskey Cake", "Glaze Topping", "Lemon Blueberry"]
       },
       "price": 40
     },
@@ -137,7 +173,7 @@
       "images": ["mini-cheesecakes-1.jpg", "mini-cheesecakes-2.png"],
       "desc": "Individually portioned cheesecakes made with real, high-quality ingredients and topped with your choice of flavor. Their bite-sized format makes them an easy addition to any dessert table.",
       "details": {
-        "flavors": ["Strawberry", "Blackberry", "Blueberry", "Raspberry", "Cherry", "Lemon Curd", "Caramel", "Chocolate Chip", "Whipped Chocolate Ganache", "Whipped Cream Frosting"],
+        "flavors": ["Strawberry", "Blackberry", "Blueberry", "Raspberry", "Cherry", "Lemon Curd", "Caramel", "Caramel Apple", "Chocolate Chip", "Whipped Chocolate Ganache", "Whipped Cream Frosting"],
         "crust": ["Graham Cracker", "Oreo"]
       },
       "price": 45
@@ -152,9 +188,9 @@
     {
       "name": "Cannoli",
       "images": ["cannoli-1.jpeg"],
-      "desc": "Crisp, hand-filled cannoli shells packed with a creamy chocolate chip filling and finished with a crumbled pistachio topping. Sold by the dozen, these are made fresh to order.",
+      "desc": "Crisp, hand-filled cannoli shells packed with a creamy chocolate chip filling and optionally finished with a crumbled pistachio topping. Sold by the dozen, these are made fresh to order.",
       "details": {
-        "flavors": ["Chocolate Chip with Pistachio Crumbled Topping"]
+        "options": ["Chocolate Chip", "Pistachio Crumbled Topping"]
       },
       "price": 35
     },
@@ -179,7 +215,7 @@
       "images": ["biscotti-1.jpg"],
       "desc": "Crunchy biscotti available in a variety of flavors, dipped and drizzled with chocolate. This item is sold by the dozen.",
       "details": {
-        "flavors": [ "Chocolate Chip - Half Dipped & Drizzled", "Butter Pecan - White Chocolate Drizzled", "Cranberry Walnut - White Chocolate Drizzled"]
+        "flavors": [ "Chocolate Chip - Half Dipped & Drizzled", "Butter Pecan - White Chocolate Drizzled", "Cranberry Walnut - White Chocolate Drizzled", "Toffee - White Chocolate Drizzled"]
       },
       "price": 35
     },
@@ -189,13 +225,6 @@
       "desc": "A classic pecan pie made with real, high-quality ingredients, baked to a golden finish with a rich, decadent filling.",
       "details": {},
       "price": 40
-    },
-    {
-      "name": "Banana Bread Muffins",
-      "images": [],
-      "desc": "Soft banana bread baked in individual muffin form for an easy grab-and-go treat. These come sold by the dozen and are made with real, ripe bananas.",
-      "details": {},
-      "price": 30
     },
     {
       "name": "Chocolate Covered Pretzel Rods",
